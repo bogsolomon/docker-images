@@ -1,0 +1,84 @@
+scp root@cloud2:/usr/local/docker-images/ubuntu.tar docker-images/
+scp root@cloud2:/usr/local/docker-images/* .
+
+dpkg -i docker-engine_1.11.0-0-xenial_amd64.deb 
+
+1. MySQL setup:
+
+docker run --name red5-mysql -v /data/docker/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=wtRed5p@ss -e MYSQL_USER=wtRed5_dbadmin -e MYSQL_DATABASE=wtc_cld -d mysql:latest
+
+2. Docker swarm
+
+nano -w /etc/systemd/system/docker.service.d/docker.conf
+
+========================================================================================================================
+
+[Service]
+ExecStart=
+ExecStart=/usr/bin/docker daemon -D -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock --cluster-store=consul://172.30.4.2:8500 --cluster-advertise=eth0:2376
+
+========================================================================================================================
+
+docker run -d -p 8500:8500 --name=consul --restart=always progrium/consul -server -bootstrap 
+
+docker run -d -p 4000:4000 --name=swarm --restart=always swarm manage -H :4000 nodes://172.30.4.2:2375,172.30.3.1:2375
+
+#####docker -H 172.30.4.2:4000 network create red5-net
+
+docker -H 172.30.4.2:4000 network create -d overlay red5
+
+docker run -d --net=red5 --name red5-jgroups bsolomon/red5-jgroups:v1
+
+3. Red5 Images
+
+docker build -t bsolomon/red5-brain:v1 .
+
+docker run -d -P --name red5-brain --net=red5-net bsolomon/red5-brain:v1
+
+docker exec -i -t red5-brain /bin/bash
+ 
+docker build -t bsolomon/red5-media:v1 .
+
+docker run -d -p 5082:5080 1936:1935 --name red5-media_2 bsolomon/red5-media:v1
+
+========================================================================================================================
+
+docker run -d --net=red5 -p 5555:5555 --name red5-jgroups bsolomon/red5-jgroups:v1
+ 
+docker run -d --net=red5 -p 1935:1935 --name=red5-brain bsolomon/red5-brain:v1 
+
+docker run -t -i --net=red5 -p 1935:1935 -p 8787:8787 --name=red5-brain bsolomon/red5-brain-d:v1 
+
+docker run -d --net=red5 --name=red5-1 -e "red5_port=1936" -e "red5_ip=172.30.4.2" -p 1936:1935 bsolomon/red5-media:v1
+
+docker run -t -i --net=red5 -e "red5_port=1936" -e "red5_ip=172.30.4.2" -p 1936:1935 -p 8787:8787 --name=red5-media bsolomon/red5-media-d:v1 
+ 
+ JAVA_OPTS="-Djava.net.preferIPv4Stack=true $JAVA_OPTS"
+ 
+ 
+ sed "30i JAVA_OPTS=\"-Djava.net.preferIPv4Stack=true $JAVA_OPTS\"" red5.sh
+ 
+========================================================================================================================
+
+CentOS 
+
+========================================================================================================================
+ 
+docker run --name some-nginx -v /data/docker/www:/usr/share/nginx/html:ro -d -p 8080:80 nginx
+
+
+
+
+
+ 
+========================================================================================================================
+
+Running
+
+========================================================================================================================
+
+docker run -d --net=red5 --name=red5-0 -e red5_port=1936 -e red5_ip=172.30.4.2 -p 1936:1935 bsolomon/red5-media:v1
+docker run -d --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host=red5-0 -e red5_ip=172.30.4.2 bsolomon/red5-control:v1
+
+
+docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -v /var/run/docker.sock:/var/run/docker.sock bsolomon/red5-manager:v1
