@@ -14,13 +14,35 @@
 3. Self-optimizing local system for each red5-media image (done)
 	a. Sensor -> Filter code in scala (done)
 6. Ants control system moving ants from self-opt to self-opt host
+	a. Remove auto downing
+	b. Add removal of addresses for unreachable nodes
 
 
 
 ============================================================================================================================================================
 
-docker run -d --net=red5 --name=red5-0 -e red5_port=1936 -e red5_ip=172.30.4.2 -p 1936:1935 bsolomon/red5-media:v1
-docker run -d --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host=red5-0 -e red5_ip=172.30.4.2 bsolomon/red5-control:v1
+docker run -it --net=red5 --name=red5-0 -e red5_port=1936 -e red5_ip=172.30.4.2 -p 1936:1935 bsolomon/red5-media:v1
+docker run -it --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host=red5-0 -e red5_ip=172.30.4.2 bsolomon/red5-control:v1
 
 
 docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -v /var/run/docker.sock:/var/run/docker.sock bsolomon/red5-manager:v1
+
+
+============================================================================================================================================================
+
+Ants change to house hunting but keep running until threahsold of changd ants reached (based on last N server's pheromone levels) (done)
+All ants go to manager and simulate new solution (ants killed if needed)
+	Add antsystem to manager to join group (done)
+	Add logic for house hunting (done)
+	Add logging via docker volume (use docker logs?)
+	Manager starts/stops servers per count and kills required ants (done)
+	Decide when to restart ants by having ant system count number of servers to start/stop and having the manager send a message back for every node started/stopped (done)
+	Change logic to have 1 ant per server, ant goes to own server first. Ant can visit same server, if single server in cloud
+Need to update pheromone level of server when an ant reaches it. Need to add pheromone decay (done)
+
+Tests will run with 1 cloud (no need for gateways in tests)
+	1. Test 1 - one server, no scaling needed
+	2. Test 2 - one server, needs scaling
+	3. Test 3 - two servers, no scaling needed
+	4. Test 4 - two servers, up scaling needed
+	4. Test 5 - two servers, down scaling needed

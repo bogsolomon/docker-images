@@ -1,5 +1,11 @@
 scp root@cloud2:/usr/local/docker-images/ubuntu.tar docker-images/
-scp root@cloud2:/usr/local/docker-images/* .
+scp -rp root@cloud2:/usr/local/docker-images/* .
+
+docker load < ubuntu.tar
+docker build -t bsolomon/red5-base:v1 red5-base/
+docker build -t bsolomon/red5-media:v1 red5-media/
+docker build -t bsolomon/red5-control:v1 red5-control/
+docker build -t bsolomon/red5-manager:v1 red5-manager/
 
 dpkg -i docker-engine_1.11.0-0-xenial_amd64.deb 
 
@@ -19,9 +25,12 @@ ExecStart=/usr/bin/docker daemon -D -H tcp://0.0.0.0:2375 -H unix:///var/run/doc
 
 ========================================================================================================================
 
+systemctl daemon-reload
+systemctl restart docker
+
 docker run -d -p 8500:8500 --name=consul --restart=always progrium/consul -server -bootstrap 
 
-docker run -d -p 4000:4000 --name=swarm --restart=always swarm manage -H :4000 nodes://172.30.4.2:2375,172.30.3.1:2375
+docker run -d -p 4000:4000 --name=swarm --restart=always swarm manage -H :4000 nodes://172.30.4.2:2375,172.30.3.1:2375,172.30.6.5:2375
 
 #####docker -H 172.30.4.2:4000 network create red5-net
 
