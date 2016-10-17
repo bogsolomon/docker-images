@@ -91,3 +91,6 @@ docker run -d --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host
 
 
 docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -v /var/run/docker.sock:/var/run/docker.sock bsolomon/red5-manager:v1
+
+
+docker rmi $(docker images -q --filter "dangling=true")

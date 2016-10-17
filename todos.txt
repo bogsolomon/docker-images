@@ -21,11 +21,11 @@
 
 ============================================================================================================================================================
 
-docker run -it --net=red5 --name=red5-0 -e red5_port=1936 -e red5_ip=172.30.4.2 -p 1936:1935 bsolomon/red5-media:v1
-docker run -it --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host=red5-0 -e red5_ip=172.30.4.2 bsolomon/red5-control:v1
+docker run -d --net=red5 --name=red5-0 -e red5_port=1936 -e red5_ip=172.30.4.2 -p 1936:1935 bsolomon/red5-media:v1
+docker run -it --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host=red5-0 -e red5_ip=172.30.4.2 -v /usr/local/docker-images/red5-control/config:/config bsolomon/red5-control:v1
 
 
-docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -v /var/run/docker.sock:/var/run/docker.sock bsolomon/red5-manager:v1
+docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/local/docker-images/red5-manager/config:/config bsolomon/red5-manager:v1
 
 
 ============================================================================================================================================================
