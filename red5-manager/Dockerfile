@@ -13,14 +13,12 @@ RUN mkdir -p $DIR
 WORKDIR ${DIR}
 
 RUN apt-get update && \
-    apt-get -y install docker.io && \
+    apt-get -y install docker.io=1.10.3-0ubuntu6 && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY self_org_manager_jar/* ./
 COPY run.sh .
 
 RUN  chmod +x run.sh
-
-VOLUME["/config"]
 
 ENTRYPOINT ["./run.sh"]

@@ -25,6 +25,4 @@ RUN  chmod +x run.sh
 
 EXPOSE 5555
 
-VOLUME["/config"]
-
 ENTRYPOINT ["./run.sh"]
