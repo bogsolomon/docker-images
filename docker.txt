@@ -94,3 +94,8 @@ docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.3
 
 
 docker rmi $(docker images -q --filter "dangling=true")
+
+docker rm $(docker ps --filter status=exited -q)
+
+docker network inspect red5
+docker network disconnect -f red5 red5-jgroups
