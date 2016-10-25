@@ -1,0 +1,45 @@
+size = size(data1.data, 1);
+
+for j = 1:numfiles
+     try
+        eval(['cpu' num2str(j) ' = data' num2str(j) '.data(1:size,8)']);
+        cpustat(1,j) = eval(['median(cpu' num2str(j) ')']);
+        cpustat(2,j) = eval(['mean(cpu' num2str(j) ')']);
+        cpustat(3,j) = eval(['std(cpu' num2str(j) ')']);
+        cpustat(4,j) = eval(['mad(cpu' num2str(j) ')']);
+        cpustat(5,j) = eval(['max(cpu' num2str(j) ')']);
+     catch err
+        disp(['Can not load cpu', num2str(j)]);
+    end
+end
+
+hFig = figure(1);set(hFig, 'Position', [100 100 1032 444]);
+j = 1;
+while j <= (numfiles - 2)
+    %latencymedian(4,j+1) = eval(['mad(latency' num2str(j) ')']);
+    eval(['plot(cpu' num2str(j) ')']);hold all;
+    if ((j+1) <= numfiles)
+        eval(['plot(cpu' num2str(j+1) ')']);
+    end
+    if ((j+2) <= numfiles)
+        eval(['plot(cpu' num2str(j+2) ')']);
+    end
+    hold off;figure(gcf);
+    leg1 = sprintf('CPU %d Users', 5*(j-1)+5);
+    leg2 = sprintf('CPU %d Users', 5*(j)+5);
+    leg3 = sprintf('CPU %d Users', 5*(j+1)+5);
+    legend(leg1,leg2,leg3);xlabel('Time (30s)');ylabel('CPU Usage (%)');
+    outfile = sprintf('%s/cpu-%d-%d-%d', outDir, 5*(j-1)+5,5*(j)+5,5*(j+1)+5);
+    % print(hFig,'-dpng',outfile);
+    screen2jpeg(outfile);
+    j = j + 2;
+%     plot(time,'latency' num2str(j) ')';hold all;plot(time,latency1);plot(time,latency2);hold off;figure(gcf);legend('Latency 5 Users','Latency 10 Users','Latency 15 Users');xlabel('time (s)');ylabel('latency (ms)');
+end
+
+eval(['plot(cpu' num2str(j) ')']);figure(gcf);
+leg1 = sprintf('CPU %d Users', 5*(j-1)+5);
+%leg2 = sprintf('CPU %d Users', 5*(j)+5);
+%legend(leg1,leg2,leg3,'Location',[0.774, 0.814, 0.1, 0.1]);xlabel('Time (s)');ylabel('Latency (ms)');
+legend(leg1);xlabel('Time (30s)');ylabel('CPU Usage (%)');
+outfile = sprintf('%s/cpu-%d-%d', outDir, 5*(j-1)+5,5*(j)+5);
+screen2jpeg(outfile);
