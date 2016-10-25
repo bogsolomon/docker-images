@@ -6,12 +6,15 @@ docker run -d --net=red5 -p 5555:5555 --name red5-jgroups bsolomon/red5-jgroups:
 docker run -d --net=red5 -p 1935:1935 --name=red5-brain bsolomon/red5-brain:v1
 
 docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -p 8001:8001 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/local/docker-images/red5-manager/config:/config bsolomon/red5-manager:v1
+docker run -d --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -p 8001:8001 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/local/docker-images/red5-manager/config:/config bsolomon/red5-manager:v1
 
 docker run -d --net=red5 --name=red5-0 -e red5_port=1936 -e red5_ip=172.30.4.2 -p 1936:1935 bsolomon/red5-media:v1
 docker run -it --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host=red5-0 -e red5_ip=172.30.4.2 -p 8000:8000 -v /usr/local/docker-images/red5-control/config:/config bsolomon/red5-control:v1
+docker run -d --net=red5 --name=red5-control-0 -e red5_port=1936 -e managed_host=red5-0 -e red5_ip=172.30.4.2 -p 8000:8000 -v /usr/local/docker-images/red5-control/config:/config bsolomon/red5-control:v1
 
 docker run -d --net=red5 --name=red5-1 -e red5_port=1937 -e red5_ip=172.30.4.2 -p 1937:1935 bsolomon/red5-media:v1
 docker run -it --net=red5 --name=red5-control-1 -e red5_port=1937 -e managed_host=red5-1 -e red5_ip=172.30.4.2 -p 8010:8000 -v /usr/local/docker-images/red5-control/config:/config bsolomon/red5-control:v1
+docker run -d --net=red5 --name=red5-control-1 -e red5_port=1937 -e managed_host=red5-1 -e red5_ip=172.30.4.2 -p 8010:8000 -v /usr/local/docker-images/red5-control/config:/config bsolomon/red5-control:v1
 
 
 
