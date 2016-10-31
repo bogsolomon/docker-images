@@ -59,13 +59,13 @@ docker run -d -p 4000:4000 --name=swarm --restart=always swarm manage -H :4000 n
 
 docker -H 172.30.4.2:4000 network create -d overlay red5
 
-docker run -d --net=red5 --name red5-jgroups bsolomon/red5-jgroups:v1
+docker -H 172.30.4.2:4000 run -d --net=red5 --name red5-jgroups bsolomon/red5-jgroups:v1
 
 3. Red5 Images
 
 docker build -t bsolomon/red5-brain:v1 .
 
-docker run -d -P --name red5-brain --net=red5-net bsolomon/red5-brain:v1
+docker -H 172.30.4.2:4000 run -d -P --name red5-brain --net=red5-net bsolomon/red5-brain:v1
 
 docker exec -i -t red5-brain /bin/bash
  
@@ -77,7 +77,7 @@ docker run -d -p 5082:5080 1936:1935 --name red5-media_2 bsolomon/red5-media:v1
 
 docker run -d --net=red5 -p 5555:5555 --name red5-jgroups bsolomon/red5-jgroups:v1
  
-docker run -d --net=red5 -p 1935:1935 --name=red5-brain bsolomon/red5-brain:v1 
+docker -H 172.30.4.2:4000 run -d --net=red5 -p 1935:1935 --name=red5-brain bsolomon/red5-brain:v1 
 
 docker run -t -i --net=red5 -p 1935:1935 -p 8787:8787 --name=red5-brain bsolomon/red5-brain-d:v1 
 
