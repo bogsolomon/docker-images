@@ -6,7 +6,7 @@
 	2. Ant movement graph? Show how ants move from server to server and the pheromone at each server as seen by the ants (2 November)
 		a. From code parsed in 1. reverse map of where the ants are at each jump
 		b. How to visualize?
-	3. House Hunting Optimization graphs? Maybe doesn't have to be graphs and just show progress at each round (3 November)
+	3. House Hunting Optimization graphs? Maybe doesn't have to be graphs and just show progress at each round (3 November) (Manual?)
 		a. Show nests at each round + ants and fitness of solution
 		b. Graph of convergence?
 	4. Show server/cloud load (maybe include as part of graphs in 1)
