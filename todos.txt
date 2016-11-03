@@ -30,8 +30,11 @@
 6. Ants control system moving ants from self-opt to self-opt host
 	a. Remove auto downing
 	b. Add removal of addresses for unreachable nodes
+============================================================================================================================================================
+Matlab
 
-
+k = strfind(str1,'ant')
+length(k) - 0 if not found, 1 or more if found
 
 ============================================================================================================================================================
 
