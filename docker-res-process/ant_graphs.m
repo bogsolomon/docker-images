@@ -18,6 +18,9 @@ if 1
 hFig = figure(1);set(hFig, 'Position', [100 100 1032 444]);
 j = 1;
 while j <= length(antIndices)
+   if (antIndices(j) == 0)
+       break;
+   end
    for k = 0:extraDataPerImage
          if ((j+k) <= length(antIndices))
             eval(['plot(times' num2str(j+k) ', pheromone' num2str(j+k) ')']);hold all;
@@ -27,10 +30,10 @@ while j <= length(antIndices)
     end 
     hold off;figure(gcf);
     legend(leg(1:(extraDataPerImage+1)));xlabel('Time');ylabel('Pheromone Level');
-    outfile = sprintf('%s/bandwidth-%d', outDir, j);
+    outfile = sprintf('%s/ant-%d', outDir, j);
     % print(hFig,'-dpng',outfile);
     screen2jpeg(outfile);
-    j = j + extraDataPerImage;
+    j = j + extraDataPerImage + 1;
 %     plot(time,'latency' num2str(j) ')';hold all;plot(time,latency1);plot(time,latency2);hold off;figure(gcf);legend('Latency 5 Users','Latency 10 Users','Latency 15 Users');xlabel('time (s)');ylabel('latency (ms)');
 end
 end

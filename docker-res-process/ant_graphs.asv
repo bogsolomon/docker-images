@@ -1,31 +1,36 @@
-for j = 1:numfiles
-    dataSize = eval(['size(serverAnt', num2str(j), '.data, 1)']);
-    try
-        eval(['bwIn' num2str(j) ' = data' num2str(j) '.data(1:dataSize,8)']);
-        eval(['bwOut' num2str(j) ' = data' num2str(j) '.data(1:dataSize,9)']);
-    catch err
-        disp(['Can not load bwIn', num2str(j)]);
+for j = 1:length(antIndices)
+    if (antIndices(j) ~= 0)
+        dataSize = eval(['size(serverAnt', num2str(antIndices(j)), '.data, 1)']);
+        try
+            eval(['times' num2str(j) ' = serverAnt' num2str(antIndices(j)) '.data(1:dataSize,1)']);
+            eval(['pheromone' num2str(j) ' = serverAnt' num2str(antIndices(j)) '.data(1:dataSize,2)']);
+        catch err
+            disp(['Can not load serverAnt', num2str(antIndices(j))]);
+        end
     end
 end
 
-extraDataPerImage = 6;
+extraDataPerImage = 2;
 leg = cell(7, 1);
 leg(:) = {'test'};
 
 if 1
 hFig = figure(1);set(hFig, 'Position', [100 100 1032 444]);
 j = 1;
-while j <= (numfiles)
+while j <= length(antIndices)
+   if (antIndices(j) == 0)
+       break;
+   end
    for k = 0:extraDataPerImage
-         if ((j+k) <= numfiles)
-            eval(['plot(bwOut' num2str(j+k) ')']);hold all;
-            legVal = sprintf('Bandwidth %d Users', (j+labelOffset+k));
+         if ((j+k) <= length(antIndices))
+            eval(['plot(times' num2str(j+k) ', pheromone' antIndices(num2str(j+k)) ')']);hold all;
+            legVal = sprintf('Ant %d Pheromone', (j+labelOffset+k));
             leg(k+1) = {legVal};
          end
     end 
     hold off;figure(gcf);
-    legend(leg(1:(extraDataPerImage+1)));xlabel('Time (30s)');ylabel('Bandwidth (Kbps)');
-    outfile = sprintf('%s/bandwidth-%d', outDir, j);
+    legend(leg(1:(extraDataPerImage+1)));xlabel('Time');ylabel('Pheromone Level');
+    outfile = sprintf('%s/ant-%d', outDir, j);
     % print(hFig,'-dpng',outfile);
     screen2jpeg(outfile);
     j = j + extraDataPerImage;
