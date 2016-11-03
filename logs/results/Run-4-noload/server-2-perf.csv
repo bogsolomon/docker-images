@@ -1,0 +1,2 @@
+Time,CPU,ClientsInRoom,Rooms,Users,LocalUsers,Latency,BwUp,BwDown,InStreamBw,OutStreamBw,Streams,OutStreams
+1478134240742,23.57568027210884,0,0,0,0,NaN,NaN,NaN,0.0,0.0,0,0
