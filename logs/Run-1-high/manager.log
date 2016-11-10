@@ -1,0 +1,51 @@
+Listening for transport dt_socket at address: 8001
+17:32:41.139 [controlSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+17:32:41.187 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+17:32:41.217 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.event.EventStream - Default Loggers started
+17:32:41.951 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - subscribing to mediator
+17:32:42.803 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@red5-manager-0:2551 Set(manager)
+17:32:54.359 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoinAck]
+17:32:54.478 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$Welcome]
+17:32:54.777 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipEnvelope]
+17:32:54.796 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.6:2551 Set(control)
+17:32:54.835 [controlSystem-akka.actor.default-dispatcher-14] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$Heartbeat]
+17:32:54.938 [controlSystem-akka.actor.default-dispatcher-14] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Status]
+17:32:55.211 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Delta]
+17:32:55.768 [controlSystem-akka.actor.default-dispatcher-14] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$HeartbeatRsp]
+17:32:55.783 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipStatus]
+17:32:56.450 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.MetricsGossipEnvelope]
+17:50:08.243 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,27.416999999999998), (akka.tcp://controlSystem@10.0.3.6:2551,25.618), (akka.tcp://controlSystem@10.0.3.6:2551,23.825), (akka.tcp://controlSystem@10.0.3.6:2551,21.067999999999998), (akka.tcp://controlSystem@10.0.3.6:2551,19.313999999999997)), Morph Type MaxMorph)
+17:50:08.247 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+17:50:08.247 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+17:50:08.248 [controlSystem-akka.actor.default-dispatcher-4] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.SLABreach]
+17:50:08.261 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 2, Fitness: 1.0, NestId: 0, OldNestId: 0))
+17:50:08.261 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 1
+17:50:09.690 [controlSystem-akka.actor.default-dispatcher-15] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [/172.30.4.2:8080]
+17:50:09.698 [controlSystem-akka.actor.default-dispatcher-14] DEBUG akka.io.TcpOutgoingConnection - Connection established to [/172.30.4.2:8080]
+17:50:16.131 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.selforg.manager.Manager - Add server answer: addNode:0
+17:50:16.132 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Server added/removed
+17:50:16.133 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - All Servers added/removed
+17:50:21.788 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.8:2551 Set(control)
+17:51:05.800 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Member detected as unreachable: Member(address = akka.tcp://controlSystem@10.0.3.8:2551, status = Up)
+17:51:16.152 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Restarting ants
+17:51:16.153 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.Ant]
+17:52:01.429 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Member detected as unreachable: Member(address = akka.tcp://controlSystem@10.0.3.8:2551, status = Up)
+17:52:02.308 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.manager.ants.AntSystem - Member detected as unreachable: Member(address = akka.tcp://controlSystem@10.0.3.6:2551, status = Up)
+18:37:00.469 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,46.12299999999999), (akka.tcp://controlSystem@10.0.3.8:2551,68.24899999999994), (akka.tcp://controlSystem@10.0.3.6:2551,48.02799999999999), (akka.tcp://controlSystem@10.0.3.8:2551,70.03499999999994), (akka.tcp://controlSystem@10.0.3.6:2551,53.54599999999999)), Morph Type NoMorph)
+18:37:26.587 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,45.49199999999999), (akka.tcp://controlSystem@10.0.3.8:2551,67.64199999999994), (akka.tcp://controlSystem@10.0.3.6:2551,49.78699999999999), (akka.tcp://controlSystem@10.0.3.8:2551,71.94599999999994), (akka.tcp://controlSystem@10.0.3.6:2551,55.462999999999994)), Morph Type NoMorph)
+18:37:26.589 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+18:37:26.590 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+18:37:26.591 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 1, Fitness: 0.5010142857142867, NestId: 0, OldNestId: 0), (New count: 1, Fitness: 0.46544285714285794, NestId: 1, OldNestId: 1))
+18:37:26.593 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions with good fitness ListBuffer((New count: 1, Fitness: 0.5010142857142867, NestId: 0, OldNestId: 0), (New count: 1, Fitness: 0.46544285714285794, NestId: 1, OldNestId: 1))
+18:37:26.594 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Round 2 previous nests Map(0 -> 1, 1 -> 1)
+18:37:26.599 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Round 2 recruitment ListBuffer(((New count: 1, Fitness: 0.46544285714285794, NestId: 1, OldNestId: 1),(New count: 1, Fitness: 0.5010142857142867, NestId: 1, OldNestId: 0)))
+18:37:26.601 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Round 3 nests Map(1 -> List((New count: 1, Fitness: 0.5010142857142867, NestId: 1, OldNestId: 0), (New count: 1, Fitness: 0.46544285714285794, NestId: 1, OldNestId: 1)))
+18:37:26.603 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 1
+18:37:26.607 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [/172.30.4.2:8080]
+18:37:26.608 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpOutgoingConnection - Connection established to [/172.30.4.2:8080]
+18:37:27.787 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Members: ListBuffer(Member(address = akka.tcp://controlSystem@10.0.3.6:2551, status = Up), Member(address = akka.tcp://controlSystem@10.0.3.8:2551, status = Up))
+18:37:30.447 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.selforg.manager.Manager - Server removed answer: removeNode:0
+18:37:30.448 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - Server added/removed
+18:37:30.449 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - All Servers added/removed
+18:37:32.430 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Member detected as unreachable: Member(address = akka.tcp://controlSystem@10.0.3.8:2551, status = Exiting)
+18:37:33.438 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@10.0.3.8:2551 after Exiting

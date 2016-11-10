@@ -1,0 +1,1030 @@
+Listening for transport dt_socket at address: 8000
+00:58:45.515 [controlSystem-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+00:58:45.576 [controlSystem-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+00:58:45.604 [controlSystem-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - Default Loggers started
+00:58:46.990 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoin$]
+00:58:47.078 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$Join]
+Oct 31, 2016 12:58:47 AM org.jgroups.stack.Configurator resolveAndAssignField
+WARNING: JGRP000014: TP.loopback has been deprecated: enabled by default
+00:58:47.235 [controlSystem-akka.actor.default-dispatcher-17] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipEnvelope]
+Oct 31, 2016 12:58:47 AM org.jgroups.stack.Configurator resolveAndAssignField
+WARNING: JGRP000014: Discovery.num_initial_members has been deprecated: will be ignored
+
+-------------------------------------------------------------------
+GMS: address=b18f9bac7e91-12135, cluster=red5_management, physical address=10.0.3.9:7800
+-------------------------------------------------------------------
+00:58:48.072 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.8:2551 Set(control)
+00:58:48.077 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@red5-manager-0:2551 Set(manager)
+00:58:48.081 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer(), Morph Type NoMorph) created for akka.tcp://controlSystem@10.0.3.9:2551
+00:58:48.091 [controlSystem-akka.actor.default-dispatcher-18] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.ControllerRegister]
+00:58:48.094 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer(), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+00:58:48.110 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,41.0)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 15 seconds
+00:58:48.118 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - subscribing to mediator
+00:58:48.274 [controlSystem-akka.actor.default-dispatcher-3] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$Heartbeat]
+00:58:48.314 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Actuator - envHost: 
+00:58:48.415 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipStatus]
+00:58:49.102 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Status]
+00:58:49.176 [controlSystem-akka.actor.default-dispatcher-3] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Delta]
+00:58:49.368 [controlSystem-akka.actor.default-dispatcher-4] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.MetricsGossipEnvelope]
+00:58:49.652 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.9:2551 Set(control)
+00:58:49.750 [controlSystem-akka.actor.default-dispatcher-14] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$HeartbeatRsp]
+00:58:50.024 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [/172.30.4.2:8080]
+00:58:50.036 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Connection established to [/172.30.4.2:8080]
+00:58:53.427 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.10:2551 Set(control)
+00:59:03.094 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 40.0
+00:59:03.121 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,41.0)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+00:59:03.122 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,41.0)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+00:59:03.126 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,41.0), (akka.tcp://controlSystem@10.0.3.9:2551,44.0)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.10:2551 in 15 seconds
+00:59:18.066 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [red5-1/10.0.3.5:5080]
+00:59:18.074 [controlSystem-akka.actor.default-dispatcher-16] DEBUG akka.io.TcpOutgoingConnection - Connection established to [red5-1/10.0.3.5:5080]
+00:59:18.110 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 43.0
+00:59:18.140 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,41.0), (akka.tcp://controlSystem@10.0.3.9:2551,44.0)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.10:2551
+00:59:18.142 [controlSystem-akka.actor.default-dispatcher-3] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.Ant]
+00:59:18.810 [controlSystem-akka.actor.default-dispatcher-14] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(1.9607843137254901,RoomStats(0,0),UserStats(0,0),NetworkStats(NaN,NaN,NaN),StreamStats(0.0,0.0,0,0))
+00:59:18.812 [controlSystem-akka.actor.default-dispatcher-14] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+00:59:18.813 [controlSystem-akka.actor.default-dispatcher-14] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+00:59:18.816 [controlSystem-akka.actor.default-dispatcher-14] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(1.9607843137254901,RoomStats(0,0),UserStats(0,0),NetworkStats(NaN,NaN,NaN),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+00:59:18.822 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.0)
+Oct 31, 2016 12:59:20 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:20 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 12:59:20 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:20 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:20 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+00:59:21.686 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,48.0)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+00:59:21.687 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,48.0), (akka.tcp://controlSystem@10.0.3.9:2551,47.0)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 15 seconds
+Oct 31, 2016 12:59:23 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 12:59:23 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:23 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 12:59:23 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 12:59:23 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:26 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:26 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 12:59:26 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:26 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:26 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 12:59:29 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 12:59:29 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:29 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 12:59:29 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 12:59:29 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+00:59:30.262 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,44.0), (akka.tcp://controlSystem@10.0.3.10:2551,44.0)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+00:59:30.263 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,44.0), (akka.tcp://controlSystem@10.0.3.10:2551,44.0), (akka.tcp://controlSystem@10.0.3.9:2551,51.0)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.10:2551 in 15 seconds
+Oct 31, 2016 12:59:30 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:30 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 12:59:30 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:30 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 12:59:30 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 12:59:32 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:32 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 12:59:32 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:32 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:32 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+00:59:33.131 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 2 pheromone 50.0
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 12:59:35 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+00:59:36.701 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,48.0), (akka.tcp://controlSystem@10.0.3.9:2551,47.0)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+Oct 31, 2016 12:59:38 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:38 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 12:59:38 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:38 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:38 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 12:59:41 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 12:59:41 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:41 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 12:59:41 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 12:59:41 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:44 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:44 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 12:59:44 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:44 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:44 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+00:59:45.281 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,44.0), (akka.tcp://controlSystem@10.0.3.10:2551,44.0), (akka.tcp://controlSystem@10.0.3.9:2551,51.0)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.10:2551
+Oct 31, 2016 12:59:45 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:45 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 12:59:45 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:45 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 12:59:45 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.STABLE sendStableMessage
+FINER: b18f9bac7e91-12135: sending stable msg to e952a510f197-57463: e952a510f197-57463: [4], 59119b447e19-41669: [29], b18f9bac7e91-12135: [1], f62318304a61-37140: [1]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are STABLE: [STABLE_GOSSIP] view-id= [e952a510f197-57463|31], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (172 bytes (0.27% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (175 bytes)
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=83 bytes, flags=OOB|NO_RELIABILITY|INTERNAL], headers are STABLE: [STABILITY] view-id= [e952a510f197-57463|31], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.STABLE handleStabilityMessage
+FINER: b18f9bac7e91-12135: received stability msg from e952a510f197-57463: e952a510f197-57463: [4], 59119b447e19-41669: [29], b18f9bac7e91-12135: [1], f62318304a61-37140: [1]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.STABLE resetDigest
+FINER: b18f9bac7e91-12135: reset digest to e952a510f197-57463: [-1], 59119b447e19-41669: [-1], b18f9bac7e91-12135: [-1], f62318304a61-37140: [-1]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: received stable digest e952a510f197-57463: [4 (4)], 59119b447e19-41669: [29 (31)], b18f9bac7e91-12135: [1 (1)], f62318304a61-37140: [1 (1)]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 4 from e952a510f197-57463
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: my_highest_rcvd (29) < stability_highest_rcvd (31): requesting retransmission of 59119b447e19-41669#31
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK retransmit
+FINER: b18f9bac7e91-12135: sending XMIT_REQ ([31, 31]) to 59119b447e19-41669
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are NAKACK: [XMIT_REQ, range=[31 : 31], sender=59119b447e19-41669], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (86 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (89 bytes)
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 29 from 59119b447e19-41669
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 1 from b18f9bac7e91-12135
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 1 from f62318304a61-37140
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (3 headers), size=97 bytes, flags=NO_TOTAL_ORDER|INTERNAL], headers are GMS: GmsHeader[VIEW], NAKACK: [XMIT_RSP, seqno=31], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:46 AM org.jgroups.stack.RangeBasedRetransmitter add
+FINER: added range 59119b447e19-41669 [30]
+Oct 31, 2016 12:59:46 AM org.jgroups.protocols.pbcast.NAKACK handleMessage
+FINER: b18f9bac7e91-12135: received 59119b447e19-41669#31
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.pbcast.NAKACK retransmit
+FINER: b18f9bac7e91-12135: sending XMIT_REQ ([30, 30]) to 59119b447e19-41669
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are NAKACK: [XMIT_REQ, range=[30 : 30], sender=59119b447e19-41669], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (86 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (89 bytes)
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (3 headers), size=0 bytes, flags=OOB|INTERNAL], headers are GMS: GmsHeader[GET_DIGEST_REQ]: mbr=null, NAKACK: [XMIT_RSP, seqno=30], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:47 AM org.jgroups.stack.RangeBasedRetransmitter remove
+FINER: all messages for 59119b447e19-41669 [30] have been received; removing range
+Oct 31, 2016 12:59:47 AM org.jgroups.stack.NakReceiverWindow add
+FINER: added missing msg 59119b447e19-41669#30
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.pbcast.NAKACK handleMessage
+FINER: b18f9bac7e91-12135: received 59119b447e19-41669#30
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.pbcast.NAKACK handleMessage
+FINER: b18f9bac7e91-12135: delivering 59119b447e19-41669#30
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.pbcast.STABLE suspend
+FINE: suspending message garbage collection
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.pbcast.STABLE startResumeTask
+FINE: b18f9bac7e91-12135: resume task started, max_suspend_time=220000
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are GMS: GmsHeader[GET_DIGEST_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.pbcast.NAKACK handleMessage
+FINER: b18f9bac7e91-12135: delivering 59119b447e19-41669#31
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (96 bytes (0.15% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (99 bytes)
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 12:59:47 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+00:59:48.079 [controlSystem-akka.actor.default-dispatcher-15] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(2.3933037707023255,RoomStats(0,0),UserStats(0,0),NetworkStats(NaN,NaN,NaN),StreamStats(0.0,0.0,0,0))
+00:59:48.080 [controlSystem-akka.actor.default-dispatcher-15] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+00:59:48.080 [controlSystem-akka.actor.default-dispatcher-15] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+00:59:48.081 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(2.3933037707023255,RoomStats(0,0),UserStats(0,0),NetworkStats(NaN,NaN,NaN),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+00:59:48.084 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.0)
+00:59:48.085 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate estimated date: EstimatedData(1,Remove)
+00:59:48.086 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate decision: Decision(Nochange)
+00:59:48.151 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 49.0
+Oct 31, 2016 12:59:50 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:50 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 12:59:50 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:50 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:50 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 12:59:50 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:50 AM org.jgroups.protocols.MERGE2 handle
+FINER: b18f9bac7e91-12135: suppressing discovery response as a merge is in progress
+00:59:51.742 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,48.0), (akka.tcp://controlSystem@10.0.3.9:2551,47.0), (akka.tcp://controlSystem@10.0.3.8:2551,54.0)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+00:59:51.743 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,48.0), (akka.tcp://controlSystem@10.0.3.9:2551,47.0), (akka.tcp://controlSystem@10.0.3.8:2551,54.0), (akka.tcp://controlSystem@10.0.3.9:2551,53.0)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 15 seconds
+Oct 31, 2016 12:59:53 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 12:59:53 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:53 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 12:59:53 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 12:59:53 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:56 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:56 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 12:59:56 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:56 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 12:59:56 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 12:59:57 AM org.jgroups.protocols.pbcast.STABLE resetDigest
+FINER: b18f9bac7e91-12135: reset digest to e952a510f197-57463: [-1], 59119b447e19-41669: [-1], b18f9bac7e91-12135: [-1], f62318304a61-37140: [-1]
+Oct 31, 2016 12:59:57 AM org.jgroups.protocols.pbcast.STABLE resume
+FINE: resuming message garbage collection
+Oct 31, 2016 12:59:59 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 12:59:59 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 12:59:59 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 12:59:59 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 12:59:59 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:00:00.319 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,44.0), (akka.tcp://controlSystem@10.0.3.10:2551,44.0), (akka.tcp://controlSystem@10.0.3.9:2551,51.0), (akka.tcp://controlSystem@10.0.3.10:2551,50.0)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+01:00:00.321 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.0), (akka.tcp://controlSystem@10.0.3.10:2551,44.0), (akka.tcp://controlSystem@10.0.3.9:2551,51.0), (akka.tcp://controlSystem@10.0.3.10:2551,50.0), (akka.tcp://controlSystem@10.0.3.9:2551,57.0)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.10:2551 in 15 seconds
+Oct 31, 2016 1:00:00 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:00 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:00:00 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:00 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:00 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 1:00:02 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:02 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:02 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:02 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:02 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:00:03.171 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 2 pheromone 56.0
+Oct 31, 2016 1:00:04 AM org.jgroups.protocols.pbcast.STABLE sendStableMessage
+FINER: b18f9bac7e91-12135: sending stable msg to e952a510f197-57463: e952a510f197-57463: [4], 59119b447e19-41669: [31], b18f9bac7e91-12135: [1], f62318304a61-37140: [1]
+Oct 31, 2016 1:00:04 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are STABLE: [STABLE_GOSSIP] view-id= [e952a510f197-57463|31], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:04 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (172 bytes (0.27% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:04 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (175 bytes)
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:05 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:00:06.760 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,41.0), (akka.tcp://controlSystem@10.0.3.8:2551,48.0), (akka.tcp://controlSystem@10.0.3.9:2551,47.0), (akka.tcp://controlSystem@10.0.3.8:2551,54.0), (akka.tcp://controlSystem@10.0.3.9:2551,53.0)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+Oct 31, 2016 1:00:08 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:08 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:08 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:08 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:08 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:00:11 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:11 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:11 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:11 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:11 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:14 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:14 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:14 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:14 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:14 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:00:15.341 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.0), (akka.tcp://controlSystem@10.0.3.10:2551,44.0), (akka.tcp://controlSystem@10.0.3.9:2551,51.0), (akka.tcp://controlSystem@10.0.3.10:2551,50.0), (akka.tcp://controlSystem@10.0.3.9:2551,57.0)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.10:2551
+Oct 31, 2016 1:00:16 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:16 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:00:16 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:16 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:16 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 1:00:17 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:17 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:17 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:17 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:17 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:00:18.094 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(1.2018531557609715,RoomStats(0,0),UserStats(0,0),NetworkStats(NaN,NaN,NaN),StreamStats(0.0,0.0,0,0))
+01:00:18.094 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+01:00:18.094 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+01:00:18.096 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(1.2018531557609715,RoomStats(0,0),UserStats(0,0),NetworkStats(NaN,NaN,NaN),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+01:00:18.098 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.0)
+01:00:18.099 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate estimated date: EstimatedData(2,Remove)
+01:00:18.100 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate decision: Decision(Nochange)
+01:00:18.190 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 55.0
+Oct 31, 2016 1:00:20 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:20 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:20 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:20 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:20 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:00:21 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:21 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:21 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:21 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+01:00:21.807 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,48.0), (akka.tcp://controlSystem@10.0.3.9:2551,47.0), (akka.tcp://controlSystem@10.0.3.8:2551,54.0), (akka.tcp://controlSystem@10.0.3.9:2551,53.0), (akka.tcp://controlSystem@10.0.3.8:2551,60.0)), Morph Type MinMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+01:00:21.809 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,47.0), (akka.tcp://controlSystem@10.0.3.8:2551,54.0), (akka.tcp://controlSystem@10.0.3.9:2551,53.0), (akka.tcp://controlSystem@10.0.3.8:2551,60.0), (akka.tcp://controlSystem@10.0.3.9:2551,59.0)), Morph Type MinMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 15 seconds
+Oct 31, 2016 1:00:23 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:23 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:23 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:23 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:23 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:26 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:26 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:26 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:26 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:26 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:00:29 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:29 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:29 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:29 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:29 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:30 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:30 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:00:30 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:30 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:30 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+01:00:30.379 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,44.0), (akka.tcp://controlSystem@10.0.3.9:2551,51.0), (akka.tcp://controlSystem@10.0.3.10:2551,50.0), (akka.tcp://controlSystem@10.0.3.9:2551,57.0), (akka.tcp://controlSystem@10.0.3.10:2551,56.0)), Morph Type MinMorph) by akka.tcp://controlSystem@10.0.3.9:2551
+01:00:30.379 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,51.0), (akka.tcp://controlSystem@10.0.3.10:2551,50.0), (akka.tcp://controlSystem@10.0.3.9:2551,57.0), (akka.tcp://controlSystem@10.0.3.10:2551,56.0), (akka.tcp://controlSystem@10.0.3.9:2551,63.0)), Morph Type MinMorph) will jump to akka.tcp://controlSystem@10.0.3.10:2551 in 15 seconds
+Oct 31, 2016 1:00:32 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:32 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:32 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:32 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:32 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:00:33.210 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 2 noAnts 0 pheromone 62.0
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:35 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:00:36.820 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,47.0), (akka.tcp://controlSystem@10.0.3.8:2551,54.0), (akka.tcp://controlSystem@10.0.3.9:2551,53.0), (akka.tcp://controlSystem@10.0.3.8:2551,60.0), (akka.tcp://controlSystem@10.0.3.9:2551,59.0)), Morph Type MinMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+Oct 31, 2016 1:00:38 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:38 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:38 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:38 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:38 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:00:41 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:41 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:41 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:41 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:41 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=83 bytes, flags=OOB|NO_RELIABILITY|INTERNAL], headers are STABLE: [STABILITY] view-id= [e952a510f197-57463|31], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.pbcast.STABLE handleStabilityMessage
+FINER: b18f9bac7e91-12135: received stability msg from e952a510f197-57463: e952a510f197-57463: [4], 59119b447e19-41669: [31], b18f9bac7e91-12135: [1], f62318304a61-37140: [1]
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.pbcast.STABLE resetDigest
+FINER: b18f9bac7e91-12135: reset digest to e952a510f197-57463: [-1], 59119b447e19-41669: [-1], b18f9bac7e91-12135: [-1], f62318304a61-37140: [-1]
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: received stable digest e952a510f197-57463: [4 (4)], 59119b447e19-41669: [31 (31)], b18f9bac7e91-12135: [1 (1)], f62318304a61-37140: [1 (1)]
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 4 from e952a510f197-57463
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 31 from 59119b447e19-41669
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 1 from b18f9bac7e91-12135
+Oct 31, 2016 1:00:42 AM org.jgroups.protocols.pbcast.NAKACK stable
+FINER: deleting msgs <= 1 from f62318304a61-37140
+Oct 31, 2016 1:00:44 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:44 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:44 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:44 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:44 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:00:45.391 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,51.0), (akka.tcp://controlSystem@10.0.3.10:2551,50.0), (akka.tcp://controlSystem@10.0.3.9:2551,57.0), (akka.tcp://controlSystem@10.0.3.10:2551,56.0), (akka.tcp://controlSystem@10.0.3.9:2551,63.0)), Morph Type MinMorph) jumped to akka.tcp://controlSystem@10.0.3.10:2551
+01:00:45.436 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received SLA breach true
+Oct 31, 2016 1:00:45 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:45 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:00:45 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:45 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:45 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 1:00:47 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:47 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:47 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:47 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:47 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:00:48.021 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Members: Map(Member(address = akka.tcp://controlSystem@10.0.3.9:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@7308dffe, Member(address = akka.tcp://controlSystem@10.0.3.8:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@596f834e, Member(address = akka.tcp://controlSystem@10.0.3.10:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@21d9ff02)
+01:00:48.022 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Members: Map(Member(address = akka.tcp://controlSystem@10.0.3.9:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@7308dffe, Member(address = akka.tcp://controlSystem@10.0.3.8:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@596f834e, Member(address = akka.tcp://controlSystem@10.0.3.10:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@21d9ff02)
+01:00:48.038 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.RepointableActorRef - Message [akka.cluster.ClusterEvent$ClusterShuttingDown$] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/clusterEventBusListener#-877064467] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.041 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@10.0.3.10:2551 after Exiting
+01:00:48.044 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@10.0.3.8:2551 after Up
+01:00:48.045 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@10.0.3.9:2551 after Exiting
+01:00:48.048 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@red5-manager-0:2551 after Up
+01:00:48.049 [controlSystem-akka.actor.default-dispatcher-4] INFO  akka.actor.LocalActorRef - Message [akka.cluster.ClusterEvent$MemberRemoved] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon/heartbeatSender#-1095260948] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+Oct 31, 2016 1:00:48 AM com.sun.jmx.mbeanserver.Repository retrieve
+FINER: name = akka:type=Cluster
+01:00:48.052 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.LocalActorRef - Message [akka.cluster.ClusterEvent$MemberRemoved] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/metrics#-1175049289] was not delivered. [3] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.052 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$PublishEvent] from Actor[akka://controlSystem/system/cluster/metrics#-1175049289] to Actor[akka://controlSystem/system/cluster/core/publisher#-1286641017] was not delivered. [4] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.053 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$PublishEvent] from Actor[akka://controlSystem/system/cluster/metrics#-1175049289] to Actor[akka://controlSystem/system/cluster/core/publisher#-1286641017] was not delivered. [5] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.053 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$PublishEvent] from Actor[akka://controlSystem/system/cluster/metrics#-1175049289] to Actor[akka://controlSystem/system/cluster/core/publisher#-1286641017] was not delivered. [6] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+Oct 31, 2016 1:00:48 AM com.sun.jmx.mbeanserver.Repository remove
+FINER: name = akka:type=Cluster
+Oct 31, 2016 1:00:48 AM com.sun.jmx.interceptor.DefaultMBeanServerInterceptor unregisterMBean
+FINER: Send delete notification of object akka:type=Cluster
+Oct 31, 2016 1:00:48 AM com.sun.jmx.interceptor.DefaultMBeanServerInterceptor sendNotification
+FINER: JMX.mbean.unregistered akka:type=Cluster
+01:00:48.063 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.LocalActorRef - Message [akka.cluster.GossipEnvelope] from Actor[akka.tcp://controlSystem@10.0.3.10:2551/system/cluster/core/daemon#371300256] to Actor[akka://controlSystem/system/cluster/core/daemon#-2022379281] was not delivered. [7] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.064 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$Unsubscribe] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon#-2022379281] was not delivered. [8] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.065 [controlSystem-akka.actor.default-dispatcher-14] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$Unsubscribe] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon#-2022379281] was not delivered. [9] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.066 [controlSystem-akka.actor.default-dispatcher-15] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$Unsubscribe] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon#-2022379281] was not delivered. [10] dead letters encountered, no more dead letters will be logged. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+01:00:48.096 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [red5-1/10.0.3.5:5080]
+01:00:48.231 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 61.0
+01:00:50.314 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Closing connection due to IO error java.io.IOException: Connection reset by peer
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:50 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+Oct 31, 2016 1:00:53 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:53 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:53 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:53 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:53 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:55 AM org.jgroups.protocols.pbcast.STABLE sendStableMessage
+FINER: b18f9bac7e91-12135: sending stable msg to e952a510f197-57463: e952a510f197-57463: [4], 59119b447e19-41669: [31], b18f9bac7e91-12135: [1], f62318304a61-37140: [1]
+Oct 31, 2016 1:00:55 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are STABLE: [STABLE_GOSSIP] view-id= [e952a510f197-57463|31], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:55 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (172 bytes (0.27% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:00:55 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (175 bytes)
+Oct 31, 2016 1:00:57 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:57 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:00:57 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:57 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:00:57 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:00:58.115 [controlSystem-akka.actor.default-dispatcher-4] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:00:58.117 [controlSystem-akka.actor.default-dispatcher-18] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 5 retries left, retrying...
+01:00:58.125 [controlSystem-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [red5-1/10.0.3.5:5080]
+01:00:58.127 [controlSystem-akka.actor.default-dispatcher-17] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/2#-639743209]] terminated
+Oct 31, 2016 1:00:59 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:00:59 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:00:59 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:00:59 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:00:59 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:02 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:02 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:02 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:02 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:02 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:01:03.250 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 60.0
+Oct 31, 2016 1:01:04 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:04 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:01:04 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:04 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:04 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 1:01:05 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:05 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:05 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:05 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:05 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:01:08.130 [controlSystem-akka.actor.default-dispatcher-17] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:08.132 [controlSystem-akka.actor.default-dispatcher-17] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 4 retries left, retrying...
+01:01:08.135 [controlSystem-akka.actor.default-dispatcher-17] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/3#1909209622]] terminated
+01:01:08.137 [controlSystem-akka.actor.default-dispatcher-14] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [red5-1/10.0.3.5:5080]
+Oct 31, 2016 1:01:08 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:08 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:08 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:08 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:08 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:01:09 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:09 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:09 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:09 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+Oct 31, 2016 1:01:11 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:11 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:11 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:11 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:11 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:14 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:14 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:14 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:14 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:14 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:01:17 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:17 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:17 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:17 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:17 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:01:18.150 [controlSystem-akka.actor.default-dispatcher-2] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:18.151 [controlSystem-akka.actor.default-dispatcher-2] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 3 retries left, retrying...
+01:01:18.152 [controlSystem-akka.actor.default-dispatcher-18] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/4#296414744]] terminated
+01:01:18.160 [controlSystem-akka.actor.default-dispatcher-14] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+01:01:18.163 [controlSystem-akka.actor.default-dispatcher-18] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+01:01:18.185 [controlSystem-akka.actor.default-dispatcher-18] ERROR akka.actor.OneForOneStrategy - exception during creation
+akka.actor.ActorInitializationException: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:172) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.create(ActorCell.scala:605) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:460) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:482) ~[akka-actor_2.11.jar:na]
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:282) [akka-actor_2.11.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:223) [akka-actor_2.11.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234) [akka-actor_2.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at akka.util.Reflect$.instantiate(Reflect.scala:65) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ArgsReflectConstructor.produce(Props.scala:348) ~[akka-actor_2.11.jar:na]
+	at akka.actor.Props.newActor(Props.scala:259) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.newActor(ActorCell.scala:561) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.create(ActorCell.scala:587) ~[akka-actor_2.11.jar:na]
+	... 9 common frames omitted
+Caused by: akka.ConfigurationException: configuration problem while creating [akka://controlSystem/system/IO-DNS/inet-address] with router dispatcher [akka.actor.default-dispatcher] and mailbox [akka.actor.default-mailbox] and routee dispatcher [akka.actor.default-dispatcher] and mailbox [akka.actor.default-mailbox]
+	at akka.actor.LocalActorRefProvider.actorOf(ActorRefProvider.scala:795) ~[akka-actor_2.11.jar:na]
+	at akka.remote.RemoteActorRefProvider.actorOf(RemoteActorRefProvider.scala:297) ~[akka-remote_2.11-2.4.0.jar:na]
+	at akka.actor.dungeon.Children$class.makeChild(Children.scala:220) ~[akka-actor_2.11.jar:na]
+	at akka.actor.dungeon.Children$class.actorOf(Children.scala:38) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.actorOf(ActorCell.scala:373) ~[akka-actor_2.11.jar:na]
+	at akka.io.SimpleDnsManager.<init>(SimpleDnsManager.scala:15) ~[akka-actor_2.11.jar:na]
+	... 18 common frames omitted
+Caused by: akka.ConfigurationException: Configuration missing for router [akka://controlSystem/system/IO-DNS/inet-address] in 'akka.actor.deployment' section.
+	at akka.routing.FromConfig.verifyConfig(RouterConfig.scala:311) ~[akka-actor_2.11.jar:na]
+	at akka.routing.RoutedActorRef.<init>(RoutedActorRef.scala:40) ~[akka-actor_2.11.jar:na]
+	at akka.actor.LocalActorRefProvider.actorOf(ActorRefProvider.scala:793) ~[akka-actor_2.11.jar:na]
+	... 23 common frames omitted
+01:01:18.271 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 59.0
+Oct 31, 2016 1:01:20 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:20 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:20 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:20 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:20 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:01:21 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:21 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:01:21 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:21 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:21 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 1:01:23 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:23 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:23 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:23 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:23 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:26 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+01:01:28.170 [controlSystem-akka.actor.default-dispatcher-18] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:28.174 [controlSystem-akka.actor.default-dispatcher-18] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:28.174 [controlSystem-akka.actor.default-dispatcher-18] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 5 retries left, retrying...
+01:01:28.174 [controlSystem-akka.actor.default-dispatcher-18] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 2 retries left, retrying...
+01:01:28.175 [controlSystem-akka.actor.default-dispatcher-18] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/6#203586451]] terminated
+01:01:28.180 [controlSystem-akka.actor.default-dispatcher-18] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/5#1758937672]] terminated
+01:01:28.189 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+01:01:28.190 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+Oct 31, 2016 1:01:29 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:29 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:29 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:29 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:29 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:32 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:32 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:32 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:32 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:32 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:01:33.291 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 58.0
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:35 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:01:38.200 [controlSystem-akka.actor.default-dispatcher-2] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:38.206 [controlSystem-akka.actor.default-dispatcher-2] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:38.206 [controlSystem-akka.actor.default-dispatcher-2] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 1 retries left, retrying...
+01:01:38.207 [controlSystem-akka.actor.default-dispatcher-16] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 4 retries left, retrying...
+01:01:38.209 [controlSystem-akka.actor.default-dispatcher-16] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/8#-316894679]] terminated
+01:01:38.210 [controlSystem-akka.actor.default-dispatcher-16] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/7#777552689]] terminated
+01:01:38.215 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+01:01:38.216 [controlSystem-akka.actor.default-dispatcher-16] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+Oct 31, 2016 1:01:38 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:38 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:38 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:38 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:38 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:01:40 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:40 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:40 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:40 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+Oct 31, 2016 1:01:41 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:41 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:41 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:41 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:42 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:44 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:44 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:44 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:44 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:44 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:01:47 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:47 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:47 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:47 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:47 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+01:01:48.115 [controlSystem-akka.actor.default-dispatcher-16] ERROR c.n.u.c.s.b.component.Red5Sensor - Couldn't get sensor metrics
+akka.pattern.AskTimeoutException: Ask timed out on [Actor[akka://controlSystem/user/IO-HTTP#89533033]] after [60000 ms]. Sender[null] sent message of type "spray.http.HttpRequest".
+	at akka.pattern.PromiseActorRef$$anonfun$1.apply$mcV$sp(AskSupport.scala:415) ~[akka-actor_2.11.jar:na]
+	at akka.actor.Scheduler$$anon$7.run(Scheduler.scala:132) ~[akka-actor_2.11.jar:na]
+	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:109) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597) ~[scala-library-2.11.7.jar:na]
+	at akka.actor.LightArrayRevolverScheduler$TaskHolder.executeTask(Scheduler.scala:486) ~[akka-actor_2.11.jar:na]
+	at akka.actor.LightArrayRevolverScheduler$$anon$8.executeBucket$1(Scheduler.scala:438) ~[akka-actor_2.11.jar:na]
+	at akka.actor.LightArrayRevolverScheduler$$anon$8.nextTick(Scheduler.scala:442) ~[akka-actor_2.11.jar:na]
+	at akka.actor.LightArrayRevolverScheduler$$anon$8.run(Scheduler.scala:394) ~[akka-actor_2.11.jar:na]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_91]
+01:01:48.138 [controlSystem-akka.actor.default-dispatcher-18] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+01:01:48.221 [controlSystem-akka.actor.default-dispatcher-15] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:48.229 [controlSystem-akka.actor.default-dispatcher-15] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:48.229 [controlSystem-akka.actor.default-dispatcher-15] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with no retries left, dispatching error...
+01:01:48.230 [controlSystem-akka.actor.default-dispatcher-15] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 3 retries left, retrying...
+01:01:48.230 [controlSystem-akka.actor.default-dispatcher-15] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/10#1969984301]] terminated
+01:01:48.230 [controlSystem-akka.actor.default-dispatcher-15] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/9#1482442539]] terminated
+01:01:48.235 [controlSystem-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+01:01:48.310 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 57.0
+Oct 31, 2016 1:01:48 AM org.jgroups.protocols.pbcast.STABLE sendStableMessage
+FINER: b18f9bac7e91-12135: sending stable msg to e952a510f197-57463: e952a510f197-57463: [4], 59119b447e19-41669: [31], b18f9bac7e91-12135: [1], f62318304a61-37140: [1]
+Oct 31, 2016 1:01:48 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are STABLE: [STABLE_GOSSIP] view-id= [e952a510f197-57463|31], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:48 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (172 bytes (0.27% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:48 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (175 bytes)
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=50 bytes, flags=OOB|DONT_BUNDLE|INTERNAL], headers are TCPGOSSIP: [type=GET_MBRS_REQ, cluster=red5_management], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.Discovery sendDiscoveryResponse
+FINER: b18f9bac7e91-12135: received GET_MBRS_REQ from e952a510f197-57463, sending response b18f9bac7e91-12135, name=b18f9bac7e91-12135, addr=10.0.3.9:7800, server
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are TCPGOSSIP: [type=GET_MBRS_RSP], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (120 bytes (0.19% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:50 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (123 bytes)
+Oct 31, 2016 1:01:53 AM org.jgroups.protocols.FD$Monitor run
+FINER: b18f9bac7e91-12135: sending are-you-alive msg to f62318304a61-37140
+Oct 31, 2016 1:01:53 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to f62318304a61-37140, src=b18f9bac7e91-12135, headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:53 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (68 bytes (0.11% of max_bundle_size) to 1 dests(s): [red5_management:f62318304a61-37140]
+Oct 31, 2016 1:01:53 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.10:7800 (71 bytes)
+Oct 31, 2016 1:01:53 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: f62318304a61-37140 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:55 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: <null>, src: e952a510f197-57463 (2 headers), size=0 bytes, flags=DONT_BUNDLE], headers are MERGE2: req, view=null, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:55 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to e952a510f197-57463, src=b18f9bac7e91-12135, headers are MERGE2: rsp, view=[e952a510f197-57463|31] (4) [e952a510f197-57463, 59119b447e19-41669, b18f9bac7e91-12135, f62318304a61-37140], TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:55 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (156 bytes (0.24% of max_bundle_size) to 1 dests(s): [red5_management:e952a510f197-57463]
+Oct 31, 2016 1:01:55 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.8:7800 (159 bytes)
+Oct 31, 2016 1:01:56 AM org.jgroups.protocols.TP passMessageUp
+FINER: b18f9bac7e91-12135: received [dst: b18f9bac7e91-12135, src: 59119b447e19-41669 (2 headers), size=0 bytes, flags=INTERNAL], headers are FD: heartbeat, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:56 AM org.jgroups.protocols.FD up
+FINER: b18f9bac7e91-12135: received are-you-alive from 59119b447e19-41669, sending response
+Oct 31, 2016 1:01:56 AM org.jgroups.protocols.TP down
+FINER: b18f9bac7e91-12135: sending msg to 59119b447e19-41669, src=b18f9bac7e91-12135, headers are FD: heartbeat ack, TP: [cluster_name=red5_management]
+Oct 31, 2016 1:01:56 AM org.jgroups.protocols.TP$BaseBundler sendBundledMessages
+FINER: b18f9bac7e91-12135: sending 1 msgs (84 bytes (0.13% of max_bundle_size) to 1 dests(s): [red5_management:59119b447e19-41669]
+Oct 31, 2016 1:01:56 AM org.jgroups.protocols.BasicTCP sendUnicast
+FINER: dest=10.0.3.3:7800 (87 bytes)
+01:01:58.151 [controlSystem-akka.actor.default-dispatcher-3] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:58.153 [controlSystem-akka.actor.default-dispatcher-3] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 5 retries left, retrying...
+01:01:58.154 [controlSystem-akka.actor.default-dispatcher-3] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/11#-1638860166]] terminated
+01:01:58.158 [controlSystem-akka.actor.default-dispatcher-15] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting
+01:01:58.240 [controlSystem-akka.actor.default-dispatcher-2] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+01:01:58.242 [controlSystem-akka.actor.default-dispatcher-17] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/12#1663498813]] terminated
+01:01:58.245 [controlSystem-akka.actor.default-dispatcher-17] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-1:5080 failed in response to GET request to /wtRed5_cld/serverStats with 2 retries left, retrying...
+01:01:58.250 [controlSystem-akka.actor.default-dispatcher-3] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-1 before connecting

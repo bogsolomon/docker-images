@@ -1,0 +1,60 @@
+Listening for transport dt_socket at address: 8001
+14:52:36.832 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+14:52:36.860 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+14:52:36.869 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - Default Loggers started
+14:52:37.627 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - subscribing to mediator
+14:52:38.473 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@red5-manager-0:2551 Set(manager)
+14:52:51.284 [controlSystem-akka.actor.default-dispatcher-18] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoinAck]
+14:52:51.415 [controlSystem-akka.actor.default-dispatcher-17] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$Welcome]
+14:52:51.454 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.6:2551 Set(control)
+14:52:51.534 [controlSystem-akka.actor.default-dispatcher-4] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipEnvelope]
+14:52:51.556 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$Heartbeat]
+14:52:51.582 [controlSystem-akka.actor.default-dispatcher-4] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Status]
+14:52:52.434 [controlSystem-akka.actor.default-dispatcher-5] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.MetricsGossipEnvelope]
+14:52:52.478 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipStatus]
+14:52:52.685 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$HeartbeatRsp]
+14:52:52.688 [controlSystem-akka.actor.default-dispatcher-5] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Delta]
+15:00:53.305 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,56.507), (akka.tcp://controlSystem@10.0.3.6:2551,58.783), (akka.tcp://controlSystem@10.0.3.6:2551,60.019), (akka.tcp://controlSystem@10.0.3.6:2551,62.254999999999995), (akka.tcp://controlSystem@10.0.3.6:2551,64.452)), Morph Type MinMorph)
+15:00:53.306 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+15:00:53.307 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+15:00:53.311 [controlSystem-akka.actor.default-dispatcher-3] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.SLABreach]
+15:00:53.322 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 1, Fitness: 0.46065, NestId: 0, OldNestId: 0))
+15:00:53.323 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 0
+15:00:53.323 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - No change
+15:01:53.348 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.manager.ants.AntSystem - Restarting ants
+15:01:53.350 [controlSystem-akka.actor.default-dispatcher-5] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.Ant]
+15:05:51.643 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,57.207), (akka.tcp://controlSystem@10.0.3.6:2551,59.462), (akka.tcp://controlSystem@10.0.3.6:2551,62.229000000000006), (akka.tcp://controlSystem@10.0.3.6:2551,64.99600000000001), (akka.tcp://controlSystem@10.0.3.6:2551,67.816)), Morph Type MinMorph)
+15:05:51.645 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+15:05:51.646 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+15:05:51.647 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 1, Fitness: 0.39640714285714274, NestId: 0, OldNestId: 0))
+15:05:51.647 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 0
+15:05:51.648 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - No change
+15:06:51.662 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.manager.ants.AntSystem - Restarting ants
+15:10:58.954 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,56.15), (akka.tcp://controlSystem@10.0.3.6:2551,58.356), (akka.tcp://controlSystem@10.0.3.6:2551,60.59), (akka.tcp://controlSystem@10.0.3.6:2551,62.824000000000005), (akka.tcp://controlSystem@10.0.3.6:2551,64.04400000000001)), Morph Type MinMorph)
+15:10:58.956 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+15:10:58.957 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+15:10:58.958 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 1, Fitness: 0.4584714285714284, NestId: 0, OldNestId: 0))
+15:10:58.959 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 0
+15:10:58.960 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - No change
+15:11:58.972 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Restarting ants
+15:15:29.238 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,55.928000000000004), (akka.tcp://controlSystem@10.0.3.6:2551,58.74100000000001), (akka.tcp://controlSystem@10.0.3.6:2551,61.55400000000001), (akka.tcp://controlSystem@10.0.3.6:2551,64.35300000000001), (akka.tcp://controlSystem@10.0.3.6:2551,67.15200000000002)), Morph Type MinMorph)
+15:15:29.239 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+15:15:29.242 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+15:15:29.242 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 1, Fitness: 0.4157142857142855, NestId: 0, OldNestId: 0))
+15:15:29.243 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 0
+15:15:29.243 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - No change
+15:16:29.252 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.manager.ants.AntSystem - Restarting ants
+15:20:36.537 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,57.279999999999994), (akka.tcp://controlSystem@10.0.3.6:2551,59.526999999999994), (akka.tcp://controlSystem@10.0.3.6:2551,60.75399999999999), (akka.tcp://controlSystem@10.0.3.6:2551,63.01299999999999), (akka.tcp://controlSystem@10.0.3.6:2551,65.27199999999999)), Morph Type MinMorph)
+15:20:36.537 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+15:20:36.538 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+15:20:36.538 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 1, Fitness: 0.4388142857142858, NestId: 0, OldNestId: 0))
+15:20:36.539 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 0
+15:20:36.540 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.manager.ants.AntSystem - No change
+15:21:36.552 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.manager.ants.AntSystem - Restarting ants
+15:25:11.816 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.6:2551,56.48), (akka.tcp://controlSystem@10.0.3.6:2551,59.212999999999994), (akka.tcp://controlSystem@10.0.3.6:2551,61.94599999999999), (akka.tcp://controlSystem@10.0.3.6:2551,64.21399999999998), (akka.tcp://controlSystem@10.0.3.6:2551,66.48199999999999)), Morph Type MinMorph)
+15:25:11.818 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Sending SLA Breach
+15:25:11.818 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Received all ants, starting optimization
+15:25:11.819 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Initial solutions ListBuffer((New count: 1, Fitness: 0.41532142857142884, NestId: 0, OldNestId: 0))
+15:25:11.819 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Delta servers: 0
+15:25:11.820 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.manager.ants.AntSystem - No change
+15:26:11.832 [controlSystem-akka.actor.default-dispatcher-15] INFO  c.n.u.c.s.manager.ants.AntSystem - Restarting ants

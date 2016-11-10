@@ -1,0 +1,17 @@
+Listening for transport dt_socket at address: 8001
+19:37:50.668 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:37:50.721 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+19:37:50.739 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - Default Loggers started
+19:37:52.005 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.manager.ants.AntSystem - subscribing to mediator
+19:37:52.716 [controlSystem-akka.actor.default-dispatcher-14] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@red5-manager-0:2551 Set(manager)
+19:38:05.037 [controlSystem-akka.actor.default-dispatcher-3] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoinAck]
+19:38:05.131 [controlSystem-akka.actor.default-dispatcher-15] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$Welcome]
+19:38:05.702 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipStatus]
+19:38:05.706 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.7:2551 Set(control)
+19:38:05.757 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$Heartbeat]
+19:38:05.965 [controlSystem-akka.actor.default-dispatcher-3] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Status]
+19:38:06.049 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Delta]
+19:38:06.296 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipEnvelope]
+19:38:06.395 [controlSystem-akka.actor.default-dispatcher-18] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$HeartbeatRsp]
+19:38:06.654 [controlSystem-akka.actor.default-dispatcher-17] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.MetricsGossipEnvelope]
+19:38:09.299 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.manager.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.8:2551 Set(control)

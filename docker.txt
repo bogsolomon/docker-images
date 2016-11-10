@@ -3,7 +3,7 @@ Running from scratch
 ========================================================================================================================
 
 docker run -d --net=red5 -p 5555:5555 --name red5-jgroups bsolomon/red5-jgroups:v1
-docker run -d --net=red5 -p 1935:1935 --name=red5-brain bsolomon/red5-brain:v1
+docker  -H 172.30.4.2:4000 run -d --net=red5 -p 1935:1935 --name=red5-brain bsolomon/red5-brain:v1
 
 docker run -it --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -p 8001:8001 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/local/docker-images/red5-manager/config:/config bsolomon/red5-manager:v1
 docker run -d --net=red5 --name=red5-manager-0 -e is_seed=true -e red5_ip=172.30.4.2 -p 8001:8001 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/local/docker-images/red5-manager/config:/config bsolomon/red5-manager:v1
@@ -83,7 +83,7 @@ docker run -t -i --net=red5 -p 1935:1935 -p 8787:8787 --name=red5-brain bsolomon
 
 docker run -d --net=red5 --name=red5-1 -e "red5_port=1936" -e "red5_ip=172.30.4.2" -p 1936:1935 bsolomon/red5-media:v1
 
-docker run -t -i --net=red5 -e "red5_port=1936" -e "red5_ip=172.30.4.2" -p 1936:1935 -p 8787:8787 --name=red5-media bsolomon/red5-media-d:v1 
+docker run -t -i --net=red5 -e "red5_port=1936" -e "red5_ip=172.30.4.2" -p 1936:1935 -p 8787:8787  -v /etc/hostname:/hostname --name=red5-media bsolomon/red5-media-d:v1 
  
  JAVA_OPTS="-Djava.net.preferIPv4Stack=true $JAVA_OPTS"
  

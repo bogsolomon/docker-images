@@ -68,9 +68,22 @@ Need to parse them
 ============================================================================================================================================================
 
 Tests will run with 1 cloud (no need for gateways in tests)
-	1. Test 1 - one server, no users
+	1. Test 1 - one server, low users
 	2. Test 1 - one server, no scaling needed
 	3. Test 2 - one server, needs scaling
-	4. Test 3 - two servers, no scaling needed
+	4. Test 3 - two servers, low users
 	5. Test 4 - two servers, up scaling needed
 	6. Test 5 - two servers, down scaling needed
+	
+============================================================================================================================================================
+Matlab
+============================================================================================================================================================
+import_data
+antCount = 1
+outDir = 'D:\docker-images\graphs\Run-1-lowmed'
+maxTime = 38
+labelOffset = 0
+ant_graphs
+perf_graphs
+antloc_graphs
+server_graphs

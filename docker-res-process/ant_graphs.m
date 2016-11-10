@@ -10,7 +10,7 @@ for j = 1:length(antIndices)
     end
 end
 
-extraDataPerImage = 2;
+extraDataPerImage = antCount -1;
 leg = cell(7, 1);
 leg(:) = {'test'};
 
@@ -23,13 +23,26 @@ while j <= length(antIndices)
    end
    for k = 0:extraDataPerImage
          if ((j+k) <= length(antIndices))
+            eval(['minTime = min(times' num2str(j+k) ')']);
+            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' - minTime']);
+            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' / 60000']);
             eval(['plot(times' num2str(j+k) ', pheromone' num2str(j+k) ')']);hold all;
             legVal = sprintf('Ant %d Pheromone', (j+labelOffset+k));
             leg(k+1) = {legVal};
          end
-    end 
+   end 
+    hline = refline(0, 25);
+    set(hline,'LineStyle',':')
+    set(hline,'Color','r')
+    hline = refline(0, 60);
+    set(hline,'LineStyle',':');
+    set(hline,'Color','r');
+    hline = refline(0, 42.5);
+    set(hline,'LineStyle',':');
+    set(hline,'Color','b');
+    axis([0,38,10,70]);
     hold off;figure(gcf);
-    legend(leg(1:(extraDataPerImage+1)));xlabel('Time');ylabel('Pheromone Level');
+    legend(leg(1:(extraDataPerImage+1)));xlabel('Time (m)');ylabel('Pheromone Level');
     outfile = sprintf('%s/ant-%d', outDir, j);
     % print(hFig,'-dpng',outfile);
     screen2jpeg(outfile);

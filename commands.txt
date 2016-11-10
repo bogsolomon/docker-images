@@ -1,0 +1,57 @@
+ scp -rp root@cloud2:/usr/local/docker-images/red5-control/self_org_control_jar .
+ 
+ docker build -t bsolomon/red5-control:v1 .
+ 
+ docker rmi $(docker images -q --filter "dangling=true")
+ 
+  > /usr/local/logs/$instName-stop-$timestamp.log
+  > /usr/local/logs/$instName-stop-$timestamp.log
+  
+   scp -rp root@cloud2:/usr/local/docker-images/red5-media/wtRed5_cld .
+ 
+ docker build -t bsolomon/red5-media:v1 .
+ 
+ docker rmi $(docker images -q --filter "dangling=true")
+ 
+ 
+ 
+ ========================================================================================================
+ 
+ docker run -d --net=red5 --name=red5-0 -e red5_port=1936 -v /etc/hostname:/hostname -p 1936:1935 -p 8787:8787 bsolomon/red5-media:v1
+ 
+  docker -H 172.30.4.2:4000 run -d --net=red5 --name=red5-1 -e red5_port=1937 -v /etc/hostname:/hostname -p 1937:1935 bsolomon/red5-media:v1
+  
+  docker -H 172.30.4.2:4000 exec -it red5-0 /bin/bash
+  
+  java.lang.NoClassDefFoundError: org/red5/client/net/rtmp/INetStreamEventHandler
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+        at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2503)
+        at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:831)
+        at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1274)
+        at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1139)
+        at com.watchtogether.server.cloud.services.WebcamStreamService.createProxyStream(WebcamStreamService.java:231)
+        at com.watchtogether.server.cloud.internal.groups.InternalGroupManager.requestStream(InternalGroupManager.java:735)
+        at com.watchtogether.server.cloud.client.messages.gms.RequestStream.handleInternalGMSMessage(RequestStream.java:30)
+        at com.watchtogether.server.cloud.internal.groups.InternalGroupReceiverAdapter.receive(InternalGroupReceiverAdapter.java:59)
+        at org.jgroups.JChannel.invokeCallback(JChannel.java:816)
+        at org.jgroups.JChannel.up(JChannel.java:741)
+        at org.jgroups.stack.ProtocolStack.up(ProtocolStack.java:1030)
+        at org.jgroups.protocols.pbcast.GMS.up(GMS.java:1043)
+        at org.jgroups.protocols.pbcast.STABLE.up(STABLE.java:234)
+        at org.jgroups.protocols.pbcast.NAKACK.up(NAKACK.java:638)
+        at org.jgroups.protocols.VERIFY_SUSPECT.up(VERIFY_SUSPECT.java:155)
+        at org.jgroups.protocols.FD.up(FD.java:260)
+        at org.jgroups.protocols.FD_SOCK.up(FD_SOCK.java:310)
+        at org.jgroups.protocols.MERGE2.up(MERGE2.java:237)
+        at org.jgroups.protocols.Discovery.up(Discovery.java:296)
+        at org.jgroups.protocols.TP.passMessageUp(TP.java:1567)
+        at org.jgroups.protocols.TP$SingleMessageHandler.run(TP.java:1783)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+        at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.red5.client.net.rtmp.INetStreamEventHandler
+        at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+        at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1139)
+        ... 27 common frames omitted
