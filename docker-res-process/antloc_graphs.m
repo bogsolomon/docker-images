@@ -22,16 +22,16 @@ while j <= length(antLocIndices)
        break;
    end
    for k = 0:extraDataPerImage
+         eval(['minTime = min(times' num2str(j) ')']);
          if ((j+k) <= length(antLocIndices))
-            eval(['minTime = min(times' num2str(j+k) ')']);
-            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' - minTime']);
-            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' / 60000']);
-            eval(['plot(times' num2str(j+k) ', antLoc' num2str(j+k) ')']);hold all;
+            eval(['timesNew' num2str(j+k) ' = times' num2str(j+k) ' - minTime']);
+            eval(['timesNew' num2str(j+k) ' = timesNew' num2str(j+k) ' / 60000']);
+            eval(['plot(timesNew' num2str(j+k) ', antLoc' num2str(j+k) ')']);hold all;
             legVal = sprintf('Ant %d Location', (j+labelOffset+k));
             leg(k+1) = {legVal};
          end
    end 
-    axis([0,38,-1,3]);
+    axis([0,maxTime,-1,7]);
     hold off;figure(gcf);
     legend(leg(1:(extraDataPerImage+1)));xlabel('Time (m)');ylabel('Server Id');
     outfile = sprintf('%s/antLoc-%d', outDir, j);

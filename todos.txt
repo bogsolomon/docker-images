@@ -77,13 +77,13 @@ Tests will run with 1 cloud (no need for gateways in tests)
 	
 ============================================================================================================================================================
 Matlab
+maxTime = 38
 ============================================================================================================================================================
 import_data
-antCount = 1
-outDir = 'D:\docker-images\graphs\Run-1-lowmed'
-maxTime = 38
+outDir = 'D:\docker-images\graphs\Run-3-medhigh'
 labelOffset = 0
-ant_graphs
 perf_graphs
+maxTime = 35
+ant_graphs
 antloc_graphs
 server_graphs

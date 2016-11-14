@@ -1,0 +1,419 @@
+Listening for transport dt_socket at address: 8000
+11:15:53.545 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+11:15:53.566 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - logger log1-Slf4jLogger started
+11:15:53.573 [controlSystem-akka.actor.default-dispatcher-2] DEBUG akka.event.EventStream - Default Loggers started
+11:15:54.908 [controlSystem-akka.actor.default-dispatcher-5] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$InitJoin$]
+11:15:55.017 [controlSystem-akka.actor.default-dispatcher-4] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.InternalClusterAction$Join]
+11:15:55.147 [controlSystem-akka.actor.default-dispatcher-17] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipEnvelope]
+
+-------------------------------------------------------------------
+GMS: address=52eb1cf6a6a6-2624, cluster=red5_management, physical address=10.0.3.10:7800
+-------------------------------------------------------------------
+11:15:56.014 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.8:2551 Set(control)
+11:15:56.015 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.9:2551 Set(control)
+11:15:56.017 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@red5-manager-0:2551 Set(manager)
+11:15:56.043 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - subscribing to mediator
+11:15:56.205 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$Heartbeat]
+11:15:57.022 [controlSystem-akka.actor.default-dispatcher-6] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Status]
+11:15:57.196 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.MetricsGossipEnvelope]
+11:15:57.231 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.GossipStatus]
+11:15:57.266 [controlSystem-akka.actor.default-dispatcher-16] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.pubsub.protobuf.DistributedPubSubMessageSerializer] for message [akka.cluster.pubsub.DistributedPubSubMediator$Internal$Delta]
+11:15:57.467 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [/172.30.4.2:8080]
+11:15:57.470 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Connection established to [/172.30.4.2:8080]
+11:15:57.501 [controlSystem-akka.actor.default-dispatcher-18] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.cluster.protobuf.ClusterMessageSerializer] for message [akka.cluster.ClusterHeartbeatSender$HeartbeatRsp]
+11:15:57.586 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Actuator - envHost: HttpEntity(text/plain; charset=UTF-8,172.30.4.2)
+11:15:57.886 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Up: akka.tcp://controlSystem@10.0.3.10:2551 Set(control)
+11:16:26.069 [controlSystem-akka.actor.default-dispatcher-16] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [red5-2/10.0.3.6:5080]
+11:16:26.074 [controlSystem-akka.actor.default-dispatcher-5] DEBUG akka.io.TcpOutgoingConnection - Connection established to [red5-2/10.0.3.6:5080]
+11:16:26.891 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(8.862745098039216,RoomStats(0,0),UserStats(9,3),NetworkStats(0.0,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:16:26.891 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:16:26.893 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:16:26.894 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(8.862745098039216,RoomStats(0,0),UserStats(9,3),NetworkStats(0.0,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:16:26.900 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.15
+11:16:26.902 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.075
+11:16:26.903 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:16:26.904 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.295
+11:16:26.904 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.1475
+11:16:56.062 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(7.900206999310003,RoomStats(0,0),UserStats(15,5),NetworkStats(9.0,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:16:56.067 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:16:56.068 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:16:56.068 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(7.900206999310003,RoomStats(0,0),UserStats(15,5),NetworkStats(9.0,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:16:56.069 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:16:56.069 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:16:56.069 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:16:56.070 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.263
+11:16:56.070 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.1315
+11:17:26.058 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(8.083551631277974,RoomStats(5,1),UserStats(15,5),NetworkStats(11.4,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:17:26.059 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:17:26.059 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:17:26.060 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(8.083551631277974,RoomStats(5,1),UserStats(15,5),NetworkStats(11.4,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:17:26.061 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:17:26.062 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:17:26.063 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:17:26.063 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.269
+11:17:26.064 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.1345
+11:17:56.085 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(5.573651863665946,RoomStats(5,1),UserStats(15,5),NetworkStats(10.6,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:17:56.088 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:17:56.088 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:17:56.089 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(5.573651863665946,RoomStats(5,1),UserStats(15,5),NetworkStats(10.6,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:17:56.089 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:17:56.090 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:17:56.091 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:17:56.091 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.186
+11:17:56.092 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.093
+11:18:26.100 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(4.941838927169,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:18:26.102 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:18:26.102 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:18:26.103 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(4.941838927169,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:18:26.103 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:18:26.104 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:18:26.105 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:18:26.105 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.165
+11:18:26.106 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.0825
+11:18:56.117 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(5.317496834625709,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:18:56.118 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:18:56.119 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:18:56.120 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(5.317496834625709,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:18:56.120 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:18:56.120 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:18:56.121 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:18:56.123 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.177
+11:18:56.124 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.0885
+11:19:26.145 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(4.813139125430924,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:19:26.145 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:19:26.147 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:19:26.148 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(4.813139125430924,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:19:26.149 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:19:26.149 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:19:26.150 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:19:26.151 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.16
+11:19:26.151 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.08
+11:19:56.162 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(5.7103167130817996,RoomStats(5,1),UserStats(15,5),NetworkStats(10.2,0.0,0.0),StreamStats(0.0,0.0,0,0))
+11:19:56.163 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:19:56.164 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:19:56.164 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(5.7103167130817996,RoomStats(5,1),UserStats(15,5),NetworkStats(10.2,0.0,0.0),StreamStats(0.0,0.0,0,0)),0.0,0.0)
+11:19:56.164 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:19:56.165 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:19:56.165 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:19:56.165 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.19
+11:19:56.166 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.095
+11:20:26.179 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(8.435339361029817,RoomStats(5,1),UserStats(15,5),NetworkStats(10.6,0.0,0.0),StreamStats(0.0,0.0,1,4))
+11:20:26.180 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:0.0/0.0
+11:20:26.181 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:20:26.181 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(8.435339361029817,RoomStats(5,1),UserStats(15,5),NetworkStats(10.6,0.0,0.0),StreamStats(0.0,0.0,1,4)),0.0,0.0)
+11:20:26.182 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:20:26.182 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.125
+11:20:26.183 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.0
+11:20:26.184 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.281
+11:20:26.184 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.1405
+11:20:56.213 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(14.457485522356578,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(253.63683710205896,1014.6766033938757,1,4))
+11:20:56.213 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.77718804513977/263.14227266438684
+11:20:56.214 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:20:56.215 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(14.457485522356578,RoomStats(5,1),UserStats(15,5),NetworkStats(10.4,0.0,0.0),StreamStats(253.63683710205896,1014.6766033938757,1,4)),65.77718804513977,263.14227266438684)
+11:20:56.216 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:20:56.217 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:20:56.217 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:20:56.218 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.731
+11:20:56.218 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.482
+11:20:56.219 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.6065
+11:20:56.227 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.369)
+11:20:56.230 [controlSystem-akka.actor.default-dispatcher-2] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:20:56.230 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant true created because model - false hasReceived = false hasCreated= {}
+11:20:56.233 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer(), Morph Type NoMorph) created for akka.tcp://controlSystem@10.0.3.10:2551
+11:20:56.237 [controlSystem-akka.actor.default-dispatcher-2] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.ControllerRegister]
+11:20:56.241 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-2, History: ListBuffer(), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:20:56.271 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,44.524)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 24 seconds
+11:20:56.410 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 43.524
+11:21:11.427 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 42.524
+11:21:15.139 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.394999999999996)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:21:15.139 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.394999999999996), (akka.tcp://controlSystem@10.0.3.10:2551,45.048)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 24 seconds
+11:21:19.259 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,44.361)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:21:19.260 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,44.361), (akka.tcp://controlSystem@10.0.3.10:2551,47.572)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 24 seconds
+11:21:20.287 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-2, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,44.524)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:21:20.289 [controlSystem-akka.actor.default-dispatcher-6] DEBUG a.s.Serialization(akka://controlSystem) - Using serializer[akka.serialization.JavaSerializer] for message [ca.ncct.uottawa.control.selforg.bootstrap.ants.Ant]
+11:21:26.218 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(10.85659144401667,RoomStats(5,1),UserStats(15,5),NetworkStats(11.2,0.0,0.0),StreamStats(252.30954620862667,1009.3620081735254,1,4))
+11:21:26.220 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.43297360182227/261.7640062690678
+11:21:26.220 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:21:26.220 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(10.85659144401667,RoomStats(5,1),UserStats(15,5),NetworkStats(11.2,0.0,0.0),StreamStats(252.30954620862667,1009.3620081735254,1,4)),65.43297360182227,261.7640062690678)
+11:21:26.221 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:21:26.221 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:21:26.221 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:21:26.222 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.727
+11:21:26.222 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.362
+11:21:26.222 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.5445
+11:21:26.223 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.33799999999999997)
+11:21:26.223 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:21:26.447 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 2 pheromone 46.572
+11:21:39.157 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.394999999999996), (akka.tcp://controlSystem@10.0.3.10:2551,45.048)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:21:41.467 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 45.572
+11:21:43.277 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,44.361), (akka.tcp://controlSystem@10.0.3.10:2551,47.572)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:21:56.233 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(10.16878487065196,RoomStats(5,1),UserStats(15,5),NetworkStats(10.8,0.0,0.0),StreamStats(250.5624368048534,1002.3732937310414,1,4))
+11:21:56.234 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:64.97988506349932/259.9515803244402
+11:21:56.234 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:21:56.234 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(10.16878487065196,RoomStats(5,1),UserStats(15,5),NetworkStats(10.8,0.0,0.0),StreamStats(250.5624368048534,1002.3732937310414,1,4)),64.97988506349932,259.9515803244402)
+11:21:56.235 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:21:56.235 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:21:56.236 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:21:56.236 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.722
+11:21:56.236 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.339
+11:21:56.236 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.5305
+11:21:56.236 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.33099999999999996)
+11:21:56.237 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:21:56.487 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 44.572
+11:22:01.214 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.394999999999996), (akka.tcp://controlSystem@10.0.3.10:2551,45.048), (akka.tcp://controlSystem@10.0.3.9:2551,43.177)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:22:01.215 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.394999999999996), (akka.tcp://controlSystem@10.0.3.10:2551,45.048), (akka.tcp://controlSystem@10.0.3.9:2551,43.177), (akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 23 seconds
+11:22:08.331 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,44.361), (akka.tcp://controlSystem@10.0.3.10:2551,47.572), (akka.tcp://controlSystem@10.0.3.8:2551,45.339)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:22:08.332 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,44.361), (akka.tcp://controlSystem@10.0.3.10:2551,47.572), (akka.tcp://controlSystem@10.0.3.8:2551,45.339), (akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 23 seconds
+11:22:11.507 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 2 pheromone 48.92400000000001
+11:22:24.227 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.394999999999996), (akka.tcp://controlSystem@10.0.3.10:2551,45.048), (akka.tcp://controlSystem@10.0.3.9:2551,43.177), (akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:22:26.254 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(7.415852459964157,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(250.97123428848562,1004.0096567716122,1,4))
+11:22:26.255 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.08590100842468/260.375948332887
+11:22:26.255 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:22:26.255 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(7.415852459964157,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(250.97123428848562,1004.0096567716122,1,4)),65.08590100842468,260.375948332887)
+11:22:26.256 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:22:26.257 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:22:26.257 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:22:26.258 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.723
+11:22:26.259 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.247
+11:22:26.259 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.485
+11:22:26.260 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.30825)
+11:22:26.261 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:22:26.527 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 47.92400000000001
+11:22:31.347 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,44.361), (akka.tcp://controlSystem@10.0.3.10:2551,47.572), (akka.tcp://controlSystem@10.0.3.8:2551,45.339), (akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:22:41.547 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 46.92400000000001
+11:22:45.263 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,44.394999999999996), (akka.tcp://controlSystem@10.0.3.10:2551,45.048), (akka.tcp://controlSystem@10.0.3.9:2551,43.177), (akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005), (akka.tcp://controlSystem@10.0.3.9:2551,45.928000000000004)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:22:45.264 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,45.048), (akka.tcp://controlSystem@10.0.3.9:2551,43.177), (akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005), (akka.tcp://controlSystem@10.0.3.9:2551,45.928000000000004), (akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 22 seconds
+11:22:55.385 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,44.361), (akka.tcp://controlSystem@10.0.3.10:2551,47.572), (akka.tcp://controlSystem@10.0.3.8:2551,45.339), (akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001), (akka.tcp://controlSystem@10.0.3.8:2551,47.57599999999999)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:22:55.385 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,47.572), (akka.tcp://controlSystem@10.0.3.8:2551,45.339), (akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001), (akka.tcp://controlSystem@10.0.3.8:2551,47.57599999999999), (akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 22 seconds
+11:22:56.279 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(7.362813429439346,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(249.47443468604885,997.9964794064203,1,4))
+11:22:56.280 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:64.69772683766827/258.81651436888495
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(7.362813429439346,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(249.47443468604885,997.9964794064203,1,4)),64.69772683766827,258.81651436888495)
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.719
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.245
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.482
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.30674999999999997)
+11:22:56.281 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:22:56.567 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 2 pheromone 51.45800000000001
+11:23:07.277 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,45.048), (akka.tcp://controlSystem@10.0.3.9:2551,43.177), (akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005), (akka.tcp://controlSystem@10.0.3.9:2551,45.928000000000004), (akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:23:11.587 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 50.45800000000001
+11:23:17.397 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,47.572), (akka.tcp://controlSystem@10.0.3.8:2551,45.339), (akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001), (akka.tcp://controlSystem@10.0.3.8:2551,47.57599999999999), (akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:23:26.297 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(9.26144244105409,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(256.64811125680853,1026.6882691143837,1,4))
+11:23:26.298 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:66.55812013921383/266.257331201863
+11:23:26.299 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:23:26.300 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(9.26144244105409,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(256.64811125680853,1026.6882691143837,1,4)),66.55812013921383,266.257331201863)
+11:23:26.300 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:23:26.300 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:23:26.301 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:23:26.301 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.74
+11:23:26.301 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.309
+11:23:26.301 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.5245
+11:23:26.301 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.32799999999999996)
+11:23:26.301 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:23:26.607 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 49.45800000000001
+11:23:28.324 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,43.177), (akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005), (akka.tcp://controlSystem@10.0.3.9:2551,45.928000000000004), (akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001), (akka.tcp://controlSystem@10.0.3.9:2551,49.81000000000001)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:23:28.324 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005), (akka.tcp://controlSystem@10.0.3.9:2551,45.928000000000004), (akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001), (akka.tcp://controlSystem@10.0.3.9:2551,49.81000000000001), (akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 23 seconds
+11:23:40.445 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,45.339), (akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001), (akka.tcp://controlSystem@10.0.3.8:2551,47.57599999999999), (akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001), (akka.tcp://controlSystem@10.0.3.8:2551,49.92399999999999)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:23:40.445 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001), (akka.tcp://controlSystem@10.0.3.8:2551,47.57599999999999), (akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001), (akka.tcp://controlSystem@10.0.3.8:2551,49.92399999999999), (akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 23 seconds
+11:23:41.627 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 2 pheromone 53.83400000000002
+11:23:51.337 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,47.248000000000005), (akka.tcp://controlSystem@10.0.3.9:2551,45.928000000000004), (akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001), (akka.tcp://controlSystem@10.0.3.9:2551,49.81000000000001), (akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:23:56.319 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(10.555645227178074,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(253.55228662239858,1014.3128998299456,1,4))
+11:23:56.321 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.75526105352661/263.047951200712
+11:23:56.322 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:23:56.322 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(10.555645227178074,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(253.55228662239858,1014.3128998299456,1,4)),65.75526105352661,263.047951200712)
+11:23:56.322 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:23:56.322 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:23:56.323 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:23:56.323 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.731
+11:23:56.323 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.352
+11:23:56.323 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.5415
+11:23:56.324 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.3365)
+11:23:56.324 [controlSystem-akka.actor.default-dispatcher-16] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:23:56.647 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 52.83400000000002
+11:24:03.457 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,49.92400000000001), (akka.tcp://controlSystem@10.0.3.8:2551,47.57599999999999), (akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001), (akka.tcp://controlSystem@10.0.3.8:2551,49.92399999999999), (akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:24:11.667 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 51.83400000000002
+11:24:12.373 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,45.928000000000004), (akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001), (akka.tcp://controlSystem@10.0.3.9:2551,49.81000000000001), (akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015), (akka.tcp://controlSystem@10.0.3.9:2551,52.64800000000001)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:24:12.374 [controlSystem-akka.actor.default-dispatcher-16] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001), (akka.tcp://controlSystem@10.0.3.9:2551,49.81000000000001), (akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015), (akka.tcp://controlSystem@10.0.3.9:2551,52.64800000000001), (akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 23 seconds
+11:24:26.345 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(9.09683774751858,RoomStats(5,1),UserStats(15,5),NetworkStats(10.8,0.0,0.0),StreamStats(253.7549627288932,1015.1182825919624,1,4))
+11:24:26.347 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.807822284464/263.2568160248865
+11:24:26.348 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:24:26.350 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(9.09683774751858,RoomStats(5,1),UserStats(15,5),NetworkStats(10.8,0.0,0.0),StreamStats(253.7549627288932,1015.1182825919624,1,4)),65.807822284464,263.2568160248865)
+11:24:26.350 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:24:26.351 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:24:26.351 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:24:26.352 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.731
+11:24:26.352 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.303
+11:24:26.353 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.517
+11:24:26.353 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.32425000000000004)
+11:24:26.353 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:24:26.497 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,47.57599999999999), (akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001), (akka.tcp://controlSystem@10.0.3.8:2551,49.92399999999999), (akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002), (akka.tcp://controlSystem@10.0.3.8:2551,52.09199999999999)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:24:26.498 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001), (akka.tcp://controlSystem@10.0.3.8:2551,49.92399999999999), (akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002), (akka.tcp://controlSystem@10.0.3.8:2551,52.09199999999999), (akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 23 seconds
+11:24:26.686 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 2 pheromone 56.19100000000002
+11:24:35.387 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,49.69100000000001), (akka.tcp://controlSystem@10.0.3.9:2551,49.81000000000001), (akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015), (akka.tcp://controlSystem@10.0.3.9:2551,52.64800000000001), (akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:24:41.707 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 55.19100000000002
+11:24:49.517 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,52.45800000000001), (akka.tcp://controlSystem@10.0.3.8:2551,49.92399999999999), (akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002), (akka.tcp://controlSystem@10.0.3.8:2551,52.09199999999999), (akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:24:56.358 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(8.406548258643575,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(250.8645381701041,1003.5521723935328,1,4))
+11:24:56.360 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.05823085324278/260.25730611865475
+11:24:56.360 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:24:56.361 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(8.406548258643575,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(250.8645381701041,1003.5521723935328,1,4)),65.05823085324278,260.25730611865475)
+11:24:56.361 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:24:56.361 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:24:56.362 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:24:56.363 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.723
+11:24:56.364 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.28
+11:24:56.365 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.5015000000000001
+11:24:56.366 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.3165)
+11:24:56.367 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:24:56.420 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,49.81000000000001), (akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015), (akka.tcp://controlSystem@10.0.3.9:2551,52.64800000000001), (akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014), (akka.tcp://controlSystem@10.0.3.9:2551,55.409000000000006)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:24:56.421 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015), (akka.tcp://controlSystem@10.0.3.9:2551,52.64800000000001), (akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014), (akka.tcp://controlSystem@10.0.3.9:2551,55.409000000000006), (akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 22 seconds
+11:24:56.726 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 56.92500000000002
+11:25:11.747 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 55.92500000000002
+11:25:13.554 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,49.92399999999999), (akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002), (akka.tcp://controlSystem@10.0.3.8:2551,52.09199999999999), (akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002), (akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:25:13.554 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002), (akka.tcp://controlSystem@10.0.3.8:2551,52.09199999999999), (akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002), (akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 22 seconds
+11:25:18.437 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,52.146000000000015), (akka.tcp://controlSystem@10.0.3.9:2551,52.64800000000001), (akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014), (akka.tcp://controlSystem@10.0.3.9:2551,55.409000000000006), (akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:25:26.373 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(8.668377742171582,RoomStats(5,1),UserStats(15,5),NetworkStats(79.0,0.0,0.0),StreamStats(247.75221297196563,991.1091825676552,1,4))
+11:25:26.374 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:64.25109257571722/257.03038967003505
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(8.668377742171582,RoomStats(5,1),UserStats(15,5),NetworkStats(79.0,0.0,0.0),StreamStats(247.75221297196563,991.1091825676552,1,4)),64.25109257571722,257.03038967003505)
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-4] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.714
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.289
+11:25:26.375 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.5015
+11:25:26.376 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.3165)
+11:25:26.376 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:25:26.767 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 57.65900000000002
+11:25:35.567 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,54.83400000000002), (akka.tcp://controlSystem@10.0.3.8:2551,52.09199999999999), (akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002), (akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:25:40.470 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,52.64800000000001), (akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014), (akka.tcp://controlSystem@10.0.3.9:2551,55.409000000000006), (akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002), (akka.tcp://controlSystem@10.0.3.9:2551,58.121)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:25:40.471 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014), (akka.tcp://controlSystem@10.0.3.9:2551,55.409000000000006), (akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002), (akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 22 seconds
+11:25:41.787 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 59.39300000000002
+11:25:56.394 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(7.566675343220631,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(253.38834838422287,1013.6549490766988,1,4))
+11:25:56.396 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.71274595026526/262.87732081864596
+11:25:56.397 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:25:56.397 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(7.566675343220631,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(253.38834838422287,1013.6549490766988,1,4)),65.71274595026526,262.87732081864596)
+11:25:56.398 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:25:56.398 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:25:56.399 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:25:56.399 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.73
+11:25:56.400 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.252
+11:25:56.400 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.491
+11:25:56.400 [controlSystem-akka.actor.default-dispatcher-17] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.31125)
+11:25:56.401 [controlSystem-akka.actor.default-dispatcher-5] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:25:56.806 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 58.39300000000002
+11:25:59.604 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,52.09199999999999), (akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002), (akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002), (akka.tcp://controlSystem@10.0.3.8:2551,55.486)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:25:59.604 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002), (akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002), (akka.tcp://controlSystem@10.0.3.8:2551,55.486), (akka.tcp://controlSystem@10.0.3.10:2551,61.148000000000025)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@10.0.3.8:2551 in 22 seconds
+11:26:02.487 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,54.488000000000014), (akka.tcp://controlSystem@10.0.3.9:2551,55.409000000000006), (akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002), (akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:26:11.827 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 1 pheromone 60.148000000000025
+11:26:21.617 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,57.19100000000002), (akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002), (akka.tcp://controlSystem@10.0.3.8:2551,55.486), (akka.tcp://controlSystem@10.0.3.10:2551,61.148000000000025)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@10.0.3.8:2551
+11:26:23.520 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,55.409000000000006), (akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002), (akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002), (akka.tcp://controlSystem@10.0.3.9:2551,60.887)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:26:23.521 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002), (akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002), (akka.tcp://controlSystem@10.0.3.9:2551,60.887), (akka.tcp://controlSystem@10.0.3.10:2551,62.90300000000003)), Morph Type MinMorph) will jump to akka.tcp://controlSystem@10.0.3.9:2551 in 22 seconds
+11:26:26.415 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(9.76361328326909,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(249.83994797360216,999.4556333252358,1,4))
+11:26:26.416 [controlSystem-akka.actor.default-dispatcher-18] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:64.79251762800885/259.1949256548848
+11:26:26.416 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:26:26.417 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(9.76361328326909,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(249.83994797360216,999.4556333252358,1,4)),64.79251762800885,259.1949256548848)
+11:26:26.417 [controlSystem-akka.actor.default-dispatcher-3] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:26:26.418 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:26:26.419 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:26:26.419 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.72
+11:26:26.420 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.325
+11:26:26.420 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.5225
+11:26:26.421 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.32699999999999996)
+11:26:26.421 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:26:26.846 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 1 noAnts 0 pheromone 61.90300000000003
+11:26:41.867 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 1 noAnts 0 pheromone 60.90300000000003
+11:26:44.656 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002), (akka.tcp://controlSystem@10.0.3.8:2551,55.486), (akka.tcp://controlSystem@10.0.3.10:2551,61.148000000000025), (akka.tcp://controlSystem@10.0.3.8:2551,57.699999999999996)), Morph Type NoMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:26:44.657 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - SLA breach, ant going to manager
+11:26:44.657 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002), (akka.tcp://controlSystem@10.0.3.8:2551,55.486), (akka.tcp://controlSystem@10.0.3.10:2551,61.148000000000025), (akka.tcp://controlSystem@10.0.3.8:2551,57.699999999999996)), Morph Type NoMorph) will jump to akka.tcp://controlSystem@red5-manager-0:2551 in 0 seconds
+11:26:44.658 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-1, History: ListBuffer((akka.tcp://controlSystem@10.0.3.8:2551,53.343999999999994), (akka.tcp://controlSystem@10.0.3.10:2551,58.65900000000002), (akka.tcp://controlSystem@10.0.3.8:2551,55.486), (akka.tcp://controlSystem@10.0.3.10:2551,61.148000000000025), (akka.tcp://controlSystem@10.0.3.8:2551,57.699999999999996)), Morph Type NoMorph) jumped to akka.tcp://controlSystem@red5-manager-0:2551
+11:26:45.537 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.10:2551,57.92500000000002), (akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002), (akka.tcp://controlSystem@10.0.3.9:2551,60.887), (akka.tcp://controlSystem@10.0.3.10:2551,62.90300000000003)), Morph Type MinMorph) jumped to akka.tcp://controlSystem@10.0.3.9:2551
+11:26:56.439 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Red5Sensor - SensorMeasurement(6.645514164651745,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(254.4469840322189,1017.8998775601069,1,4))
+11:26:56.440 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.c.DataFilterChain - Vals:65.98728839009826/263.97818401455055
+11:26:56.440 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate start
+11:26:56.440 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - updateModel: FilterMeasurement(SensorMeasurement(6.645514164651745,RoomStats(5,1),UserStats(15,5),NetworkStats(10.0,0.0,0.0),StreamStats(254.4469840322189,1017.8998775601069,1,4)),65.98728839009826,263.97818401455055)
+11:26:56.441 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - clientsIV: 0.25
+11:26:56.441 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsOutValue: 0.013
+11:26:56.441 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR1: 0.1315
+11:26:56.441 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - streamsInIV: 0.733
+11:26:56.441 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - cpuValue: 0.222
+11:26:56.441 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.FuzzyModel - confidenceR2: 0.4775
+11:26:56.442 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Coordinator - coordinate model update: Model(0.3045)
+11:26:56.442 [controlSystem-akka.actor.default-dispatcher-6] DEBUG c.n.u.c.s.b.component.Estimator - From stable -> stable
+11:26:56.887 [controlSystem-akka.actor.default-dispatcher-2] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 41.0
+11:27:06.584 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received ant: (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002), (akka.tcp://controlSystem@10.0.3.9:2551,60.887), (akka.tcp://controlSystem@10.0.3.10:2551,62.90300000000003), (akka.tcp://controlSystem@10.0.3.9:2551,63.687999999999995)), Morph Type MinMorph) by akka.tcp://controlSystem@10.0.3.10:2551
+11:27:06.585 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - SLA breach, ant going to manager
+11:27:06.585 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002), (akka.tcp://controlSystem@10.0.3.9:2551,60.887), (akka.tcp://controlSystem@10.0.3.10:2551,62.90300000000003), (akka.tcp://controlSystem@10.0.3.9:2551,63.687999999999995)), Morph Type MinMorph) will jump to akka.tcp://controlSystem@red5-manager-0:2551 in 0 seconds
+11:27:06.585 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Ant (Ant UUID: red5-0, History: ListBuffer((akka.tcp://controlSystem@10.0.3.9:2551,58.121), (akka.tcp://controlSystem@10.0.3.10:2551,60.39300000000002), (akka.tcp://controlSystem@10.0.3.9:2551,60.887), (akka.tcp://controlSystem@10.0.3.10:2551,62.90300000000003), (akka.tcp://controlSystem@10.0.3.9:2551,63.687999999999995)), Morph Type MinMorph) jumped to akka.tcp://controlSystem@red5-manager-0:2551
+11:27:06.619 [controlSystem-akka.actor.default-dispatcher-3] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Received SLA breach true
+11:27:09.265 [controlSystem-akka.actor.default-dispatcher-17] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Members: Map(Member(address = akka.tcp://controlSystem@10.0.3.9:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@22721709, Member(address = akka.tcp://controlSystem@10.0.3.8:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@2e4db7d6, Member(address = akka.tcp://controlSystem@10.0.3.10:2551, status = Up) -> ca.ncct.uottawa.control.selforg.bootstrap.ants.Metrics@428f17d6)
+11:27:09.317 [controlSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.RepointableActorRef - Message [akka.cluster.ClusterEvent$SeenChanged] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/clusterEventBusListener#-1967390625] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.322 [controlSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.RepointableActorRef - Message [akka.cluster.ClusterEvent$ReachabilityChanged] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/clusterEventBusListener#-1967390625] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.346 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.actor.LocalActorRef - Message [akka.cluster.ClusterEvent$MemberRemoved] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon/heartbeatSender#1612692557] was not delivered. [3] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.347 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.actor.LocalActorRef - Message [akka.cluster.ClusterEvent$MemberRemoved] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon/heartbeatSender#1612692557] was not delivered. [4] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.347 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.actor.LocalActorRef - Message [akka.cluster.ClusterEvent$MemberRemoved] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon/heartbeatSender#1612692557] was not delivered. [5] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.348 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.actor.LocalActorRef - Message [akka.cluster.ClusterEvent$MemberRemoved] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon/heartbeatSender#1612692557] was not delivered. [6] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.349 [controlSystem-akka.actor.default-dispatcher-2] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$Unsubscribe] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon#-589779114] was not delivered. [7] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.355 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@10.0.3.10:2551 after Exiting
+11:27:09.355 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@10.0.3.8:2551 after Up
+11:27:09.355 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@10.0.3.9:2551 after Up
+11:27:09.355 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Member is Removed: akka.tcp://controlSystem@red5-manager-0:2551 after Up
+11:27:09.355 [controlSystem-akka.actor.default-dispatcher-18] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$Unsubscribe] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon#-589779114] was not delivered. [8] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.355 [controlSystem-akka.actor.default-dispatcher-18] INFO  akka.actor.LocalActorRef - Message [akka.cluster.InternalClusterAction$Unsubscribe] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/cluster/core/daemon#-589779114] was not delivered. [9] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:09.355 [controlSystem-akka.actor.default-dispatcher-18] INFO  akka.actor.RepointableActorRef - Message [akka.cluster.ClusterEvent$MemberRemoved] from Actor[akka://controlSystem/deadLetters] to Actor[akka://controlSystem/system/distributedPubSubMediator#-2098905816] was not delivered. [10] dead letters encountered, no more dead letters will be logged. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+11:27:11.907 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 41.0
+11:27:26.926 [controlSystem-akka.actor.default-dispatcher-5] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 40.0
+11:27:41.452 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-2 before connecting
+11:27:41.482 [controlSystem-akka.actor.default-dispatcher-6] ERROR akka.actor.OneForOneStrategy - exception during creation
+akka.actor.ActorInitializationException: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:172) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.create(ActorCell.scala:605) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:460) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:482) ~[akka-actor_2.11.jar:na]
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:282) [akka-actor_2.11.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:223) [akka-actor_2.11.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234) [akka-actor_2.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_91]
+	at akka.util.Reflect$.instantiate(Reflect.scala:65) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ArgsReflectConstructor.produce(Props.scala:348) ~[akka-actor_2.11.jar:na]
+	at akka.actor.Props.newActor(Props.scala:259) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.newActor(ActorCell.scala:561) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.create(ActorCell.scala:587) ~[akka-actor_2.11.jar:na]
+	... 9 common frames omitted
+Caused by: akka.ConfigurationException: configuration problem while creating [akka://controlSystem/system/IO-DNS/inet-address] with router dispatcher [akka.actor.default-dispatcher] and mailbox [akka.actor.default-mailbox] and routee dispatcher [akka.actor.default-dispatcher] and mailbox [akka.actor.default-mailbox]
+	at akka.actor.LocalActorRefProvider.actorOf(ActorRefProvider.scala:795) ~[akka-actor_2.11.jar:na]
+	at akka.remote.RemoteActorRefProvider.actorOf(RemoteActorRefProvider.scala:297) ~[akka-remote_2.11-2.4.0.jar:na]
+	at akka.actor.dungeon.Children$class.makeChild(Children.scala:220) ~[akka-actor_2.11.jar:na]
+	at akka.actor.dungeon.Children$class.actorOf(Children.scala:38) ~[akka-actor_2.11.jar:na]
+	at akka.actor.ActorCell.actorOf(ActorCell.scala:373) ~[akka-actor_2.11.jar:na]
+	at akka.io.SimpleDnsManager.<init>(SimpleDnsManager.scala:15) ~[akka-actor_2.11.jar:na]
+	... 18 common frames omitted
+Caused by: akka.ConfigurationException: Configuration missing for router [akka://controlSystem/system/IO-DNS/inet-address] in 'akka.actor.deployment' section.
+	at akka.routing.FromConfig.verifyConfig(RouterConfig.scala:311) ~[akka-actor_2.11.jar:na]
+	at akka.routing.RoutedActorRef.<init>(RoutedActorRef.scala:40) ~[akka-actor_2.11.jar:na]
+	at akka.actor.LocalActorRefProvider.actorOf(ActorRefProvider.scala:793) ~[akka-actor_2.11.jar:na]
+	... 23 common frames omitted
+11:27:41.946 [controlSystem-akka.actor.default-dispatcher-4] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 39.0
+11:27:51.470 [controlSystem-akka.actor.default-dispatcher-6] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+11:27:51.472 [controlSystem-akka.actor.default-dispatcher-17] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-2:5080 failed in response to GET request to /wtRed5_cld/serverStats with 5 retries left, retrying...
+11:27:51.474 [controlSystem-akka.actor.default-dispatcher-17] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/2#-2043336358]] terminated
+11:27:56.966 [controlSystem-akka.actor.default-dispatcher-6] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 38.0
+11:28:01.490 [controlSystem-akka.actor.default-dispatcher-17] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-2 before connecting
+11:28:01.496 [controlSystem-akka.actor.default-dispatcher-18] DEBUG akka.io.TcpOutgoingConnection - Resolving red5-2 before connecting
+11:28:11.507 [controlSystem-akka.actor.default-dispatcher-4] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+11:28:11.509 [controlSystem-akka.actor.default-dispatcher-4] WARN  s.can.client.HttpClientConnection - Configured connecting timeout of 10 seconds expired, stopping
+11:28:11.512 [controlSystem-akka.actor.default-dispatcher-4] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-2:5080 failed in response to GET request to /wtRed5_cld/serverStats with 4 retries left, retrying...
+11:28:11.513 [controlSystem-akka.actor.default-dispatcher-4] WARN  s.can.client.HttpHostConnectionSlot - Connection attempt to red5-2:5080 failed in response to GET request to /wtRed5_cld/serverStats with 5 retries left, retrying...
+11:28:11.517 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/3#-991381609]] terminated
+11:28:11.519 [controlSystem-akka.actor.default-dispatcher-4] DEBUG akka.io.SelectionHandler - Monitored actor [Actor[akka://controlSystem/user/IO-HTTP/group-0/4#2030964438]] terminated
+11:28:11.987 [controlSystem-akka.actor.default-dispatcher-18] INFO  c.n.u.c.s.bootstrap.ants.AntSystem - Decaying maxAnts 0 minAnts 0 noAnts 0 pheromone 37.0

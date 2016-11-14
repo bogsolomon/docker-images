@@ -10,7 +10,7 @@ for j = 1:length(antIndices)
     end
 end
 
-extraDataPerImage = antCount -1;
+extraDataPerImage = antCount - 1;
 leg = cell(7, 1);
 leg(:) = {'test'};
 
@@ -22,12 +22,12 @@ while j <= length(antIndices)
        break;
    end
    for k = 0:extraDataPerImage
+         eval(['minTime = min(times' num2str(j) ')']);
          if ((j+k) <= length(antIndices))
-            eval(['minTime = min(times' num2str(j+k) ')']);
-            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' - minTime']);
-            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' / 60000']);
-            eval(['plot(times' num2str(j+k) ', pheromone' num2str(j+k) ')']);hold all;
-            legVal = sprintf('Ant %d Pheromone', (j+labelOffset+k));
+            eval(['timesNew' num2str(j+k) ' = times' num2str(j+k) ' - minTime']);
+            eval(['timesNew' num2str(j+k) ' = timesNew' num2str(j+k) ' / 60000']);
+            eval(['plot(timesNew' num2str(j+k) ', pheromone' num2str(j+k) ')']);hold all;
+            legVal = sprintf('Server %d Ant %d Pheromone', (j - 1) / antCount + 1, k + 1);
             leg(k+1) = {legVal};
          end
    end 
@@ -40,7 +40,7 @@ while j <= length(antIndices)
     hline = refline(0, 42.5);
     set(hline,'LineStyle',':');
     set(hline,'Color','b');
-    axis([0,38,10,70]);
+    axis([0,maxTime,10,70]);
     hold off;figure(gcf);
     legend(leg(1:(extraDataPerImage+1)));xlabel('Time (m)');ylabel('Pheromone Level');
     outfile = sprintf('%s/ant-%d', outDir, j);

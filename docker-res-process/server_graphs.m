@@ -22,11 +22,11 @@ while j <= length(controlIndices)
        break;
    end
    for k = 0:extraDataPerImage
+         eval(['minTime = min(times' num2str(j) ')']);
          if ((j+k) <= length(controlIndices))
-            eval(['minTime = min(times' num2str(j+k) ')']);
-            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' - minTime']);
-            eval(['times' num2str(j+k) ' = times' num2str(j+k) ' / 60000']);
-            eval(['plot(times' num2str(j+k) ', spheromone' num2str(j+k) ')']);hold all;
+            eval(['timesNew' num2str(j+k) ' = times' num2str(j+k) ' - minTime']);
+            eval(['timesNew' num2str(j+k) ' = timesNew' num2str(j+k) ' / 60000']);
+            eval(['plot(timesNew' num2str(j+k) ', spheromone' num2str(j+k) ')']);hold all;
             legVal = sprintf('Server %d Pheromone', (j+labelOffset+k));
             leg(k+1) = {legVal};
          end
@@ -40,7 +40,7 @@ while j <= length(controlIndices)
     hline = refline(0, 42.5);
     set(hline,'LineStyle',':');
     set(hline,'Color','b');
-    axis([0,38,10,70]);
+    axis([0,maxTime,10,90]);
     hold off;figure(gcf);
     legend(leg(1:(extraDataPerImage+1)));xlabel('Time (m)');ylabel('Pheromone Level');
     outfile = sprintf('%s/server-%d', outDir, j);
