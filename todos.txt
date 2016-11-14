@@ -80,8 +80,10 @@ Matlab
 maxTime = 38
 ============================================================================================================================================================
 import_data
+antCount = 5
 outDir = 'D:\docker-images\graphs\Run-3-medhigh'
 labelOffset = 0
+maxTime = 40
 perf_graphs
 maxTime = 35
 ant_graphs
