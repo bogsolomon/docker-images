@@ -1,7 +1,7 @@
 ========================================
 Thesis writing
 ========================================
-1. Finish related work chapter (21 Jan)
+1. Finish related work chapter (21 Jan) (done)
 2. Self-organizing chapter (4 February)
 3. Add simulation environment info to testing chapter (11 February)
 4. Add results from simulation/reformat results from cloud tests - remove per ant results (25 February)
@@ -9,6 +9,8 @@ Thesis writing
 ========================================
 Simulations
 ========================================
-1. Create multiple workloads/multiple cloud setups for testing (parse files with info) (28 Feb)
-2. Add ant algorithm to simulation environment (18 March)
+1. Create multiple workloads/multiple cloud setups for testing (parse files with info) (28 Feb) (done)
+	a. Genereate different simulations (multiple VMs)
+	b. Different workloads (scaling factor in props file)
+2. Add ant algorithms to simulation environment (18 Feb)
 3. Matlab code to parse results and make graphs (25 Feb)
