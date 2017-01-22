@@ -5,12 +5,14 @@ Thesis writing
 2. Self-organizing chapter (4 February)
 3. Add simulation environment info to testing chapter (11 February)
 4. Add results from simulation/reformat results from cloud tests - remove per ant results (25 February)
+	a. Add info about amazon/google auto scaling and compare to
 5. Redo conclusions (3 March)
 ========================================
 Simulations
 ========================================
-1. Create multiple workloads/multiple cloud setups for testing (parse files with info) (28 Feb) (done)
+1. Create multiple workloads/multiple cloud setups for testing (parse files with info) (28 Jan) (done)
 	a. Genereate different simulations (multiple VMs)
 	b. Different workloads (scaling factor in props file)
 2. Add ant algorithms to simulation environment (18 Feb)
+	a. Autoscaling initital cooldown? or just remove first x seconds
 3. Matlab code to parse results and make graphs (25 Feb)
