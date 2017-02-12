@@ -11,8 +11,8 @@ Thesis writing
 Simulations
 ========================================
 1. Create multiple workloads/multiple cloud setups for testing (parse files with info) (28 Jan) (done)
-	a. Genereate different simulations (multiple VMs)
-	b. Different workloads (scaling factor in props file)
-2. Add ant algorithms to simulation environment (18 Feb)
+	a. Genereate different simulations (multiple VMs) (done)
+	b. Different workloads (scaling factor in props file) (done)
+2. Add ant algorithms to simulation environment (18 Feb) (done)
 	a. Autoscaling initital cooldown? or just remove first x seconds
 3. Matlab code to parse results and make graphs (25 Feb)
