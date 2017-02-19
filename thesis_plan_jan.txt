@@ -15,4 +15,9 @@ Simulations
 	b. Different workloads (scaling factor in props file) (done)
 2. Add ant algorithms to simulation environment (18 Feb) (done)
 	a. Autoscaling initital cooldown? or just remove first x seconds
-3. Matlab code to parse results and make graphs (25 Feb)
+	b. Change scaling period but add log just 1 every min (done)
+3. Matlab code to parse results and make graphs (25 Feb) (done)
+4. Figure out some statistics to generate for the various runs (multiple runs for same config and aggregate)
+	a. Server up/down counts.
+	b. Over provisioning/Under provisioning (how long is the CPU over/under a threshold for X continous seconds)
+	c. Graph hourly/30 mins results
