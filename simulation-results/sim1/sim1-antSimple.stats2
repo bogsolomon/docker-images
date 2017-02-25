@@ -1,11 +1,11 @@
 Scale Up Count:128
 Scale Down Count:132
-Over provisioned time - 0.1:1800.0
-Over provisioned time - 0.2:10380.0
-Over provisioned time - 0.3:49020.0
-Over provisioned time - 0.4:187380.00000000003
-Over provisioned time - 0.5:427740.0
-Under provisioned time - 0.7:78720.0
-Under provisioned time - 0.8:35940.0
-Under provisioned time - 0.9:15240.0
-Under provisioned time - 0.95:9600.0
+Over provisioned time - 0.1:9.32642487046632
+Over provisioned time - 0.2:53.78238341968912
+Over provisioned time - 0.3:253.9896373056995
+Over provisioned time - 0.4:970.8808290155442
+Over provisioned time - 0.5:2216.2694300518133
+Under provisioned time - 0.7:407.8756476683938
+Under provisioned time - 0.8:186.21761658031087
+Under provisioned time - 0.9:78.96373056994818
+Under provisioned time - 0.95:49.740932642487046
